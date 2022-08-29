@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.rongcloud.sdk:crash:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a7e337bc55c1250301789b0a89e261ee/transformed/jetified-crash-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a7e337bc55c1250301789b0a89e261ee/transformed/jetified-crash-1.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

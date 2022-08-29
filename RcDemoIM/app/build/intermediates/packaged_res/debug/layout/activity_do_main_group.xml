@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                  
+                                                           
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:tag="layout/activity_do_main_group_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" tools:context="cn.rongcloud.um.ui.DoMainGroupActivity">
+    <cn.rongcloud.um.widget.TopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerText="群组" />
+    <cn.rongcloud.um.widget.InputTextLinearLayout
+        android:id="@+id/input_text_groupId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:leftText="请输入群组Id:" />
+    <ListView
+        android:id="@+id/content_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#999999"
+        android:dividerHeight="0.5dp"/>
+</LinearLayout>
+         

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.rongcloud.um.ui.DoMainChatRoomActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.rongcloud.um.ui.widget.TopBar
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:centerText="聊天室" />
+
+        <cn.rongcloud.um.ui.widget.InputTextLinearLayout
+            android:id="@+id/input_text_chatRoomId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:leftText="请输入聊天室Id:" />
+
+        <ListView
+            android:id="@+id/content_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#999999"
+            android:dividerHeight="0.5dp" />
+
+        <TextView
+            android:id="@+id/tv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/edit_bg"
+            android:layout_marginRight="10dp"
+            android:text="清空" />
+
+        <View
+            style="@style/LineStyle"
+            android:layout_marginVertical="5dp"
+            android:background="@color/app_color_grey"/>
+    </LinearLayout>
+</layout>

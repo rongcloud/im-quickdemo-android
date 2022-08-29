@@ -1,0 +1,222 @@
+[
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable_shape_black3_333336_bg.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable/shape_black3_333336_bg.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_item_custom.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/item_custom.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_tab_contacts_nor.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/tab_contacts_nor.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_picklist_text.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/picklist_text.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_do_main_chat_room.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_do_main_chat_room.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_tab_contacts_sel.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/tab_contacts_sel.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_domain_message.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_domain_message.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_rc_activity_my_conversation.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/rc_activity_my_conversation.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_icon_right.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/icon_right.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_fragment_domain_list.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/fragment_domain_list.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/color_selector_pick_color.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/color/selector_pick_color.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_setting.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_setting.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_main.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/xml_network_security_config.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_nav_file_setting.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_nav_file_setting.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_icon_more_up.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/icon_more_up.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable_edit_bg.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable/edit_bg.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_tab_me_nor.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/tab_me_nor.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_item_bottom.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/item_bottom.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_tab_me_sel.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/tab_me_sel.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_parameter_setting.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_parameter_setting.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_fragment_mine.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/fragment_mine.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_tab_chat_nor.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/tab_chat_nor.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_input_text_layout.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/input_text_layout.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable_ic_launcher_background.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_tab_chat_sel.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/tab_chat_sel.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_do_main_group.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_do_main_group.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_icon_main_more.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/icon_main_more.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_do_main_ultra_group.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_do_main_ultra_group.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable_rect_round_red.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable/rect_round_red.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "cn.rongcloud.um.app-pngs-27:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_setting.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/setting.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_language_setting.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_language_setting.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_popupwindow_sent_chat.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/popupwindow_sent_chat.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable_shape_light_grey.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable/shape_light_grey.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_dialog_sent_chat.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/dialog_sent_chat.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_my_mention_member_select.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_my_mention_member_select.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/drawable-xhdpi_icon_return.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/drawable-xhdpi/icon_return.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-xhdpi_seal_app_logo.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-xhdpi/seal_app_logo.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_top_bar_layout.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/top_bar_layout.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_title.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/title.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/mipmap-mdpi_seal_app_logo.png.flat",
+        "source": "cn.rongcloud.um.app-main-34:/mipmap-mdpi/seal_app_logo.png"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-merged_res-32:/layout_activity_login.xml.flat",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_login.xml"
+    }
+]

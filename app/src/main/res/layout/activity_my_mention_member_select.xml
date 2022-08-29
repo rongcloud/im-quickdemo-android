@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.rongcloud.um.ui.MyMentionMemberSelectActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <cn.rongcloud.um.ui.widget.TopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerText="@string/rc_mention_title_choose_members"/>
+    <cn.rongcloud.um.ui.widget.InputTextLinearLayout
+        android:id="@+id/rc_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="请输入信息： "/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_selected_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+</LinearLayout>
+</layout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/rc_mine_portrait"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rc_default_portrait" />
+
+            <TextView
+                android:id="@+id/rc_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/rc_mine_portrait"
+                android:text="当前登录用户UserID" />
+
+            <TextView
+                android:id="@+id/rc_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rc_user"
+                android:layout_alignLeft="@id/rc_user"
+                android:layout_marginTop="10dp"
+                android:text="ID: 当前登录userid" />
+
+            <TextView
+                android:id="@+id/rc_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_bg"
+                android:padding="5dp"
+                android:text="退出登录" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_not_disturb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_user_info"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="全局免打扰" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_not_disturb"
+            android:layout_marginTop="25dp"
+            android:background="@color/app_color_black" />
+
+        <Switch
+            android:id="@+id/rc_switch_not_disturb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_not_disturb"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:id="@+id/tv_remote_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_not_disturb"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="显示远程推送内容" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_remote_push"
+            android:layout_marginTop="25dp"
+            android:background="@color/app_color_black" />
+
+        <Switch
+            android:id="@+id/rc_switch_remote_push_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_remote_push"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_remote_push"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="推送多语言" />
+
+        <TextView
+            android:id="@+id/tv_language_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_language"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:drawableEnd="@drawable/icon_right"
+            android:gravity="center"
+            android:text="简体中文" />
+    </RelativeLayout>
+</layout>

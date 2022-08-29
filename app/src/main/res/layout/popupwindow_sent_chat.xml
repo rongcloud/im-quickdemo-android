@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="listener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/picture_color_transparent"
+        android:orientation="vertical"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="11dp"
+            android:src="@drawable/icon_more_up" />
+
+        <LinearLayout
+            android:id="@+id/ll_sent_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_black3_333336_bg"
+            android:onClick="@{listener}"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sent_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:layout_marginHorizontal="12dp"
+                android:drawableLeft="@drawable/tab_chat_nor"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="发起聊天"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

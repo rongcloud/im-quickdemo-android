@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.rongcloud.um.ui.NavFileSettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.rongcloud.um.ui.widget.TopBar
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:centerText="@string/rc_setting_text_navigation_file_title"
+            app:rightText="@string/text_save" />
+
+        <cn.rongcloud.um.ui.widget.InputTextLinearLayout
+            android:id="@+id/input_text_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:leftText="naviServer:" />
+        <cn.rongcloud.um.ui.widget.InputTextLinearLayout
+            android:id="@+id/input_text_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftText="fileServer:  " />
+    </LinearLayout>
+
+</layout>

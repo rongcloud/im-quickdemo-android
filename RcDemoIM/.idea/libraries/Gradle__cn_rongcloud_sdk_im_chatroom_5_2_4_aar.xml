@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.rongcloud.sdk:im_chatroom:5.2.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

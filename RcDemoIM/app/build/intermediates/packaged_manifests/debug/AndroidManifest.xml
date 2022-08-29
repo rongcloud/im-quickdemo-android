@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.rongcloud.um"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="31" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 旧 oppo 推送权限相关 -->
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+    <!-- xiaomi -->
+    <permission
+        android:name="cn.rongcloud.um.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="cn.rongcloud.um.permission.MIPUSH_RECEIVE" />
+
+    <!-- 外部存储读写权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 前台 Service 权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 拍照 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 拍照等 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> <!-- 网络 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 录音权限，语音消息使用 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.meizu.flyme.permission.PUSH" /> <!-- 消息通道保活 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 定位，如果您需要定位相关的功能，可以打开以下注释 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <uses-permission android:name="cn.rongcloud.um.permission.RONG_ACCESS_RECEIVER" /> <!-- 融云自定义接收广播权限，用于广播接收 -->
+    <permission
+        android:name="cn.rongcloud.um.permission.RONG_ACCESS_RECEIVER"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="cn.rongcloud.um.base.MyApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/seal_app_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/seal_app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RcDemoIM" >
+        <activity
+            android:name="cn.rongcloud.um.ui.MyMentionMemberSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name="cn.rongcloud.um.ui.LanguageSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name="cn.rongcloud.um.ui.DoMainUltraGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name="cn.rongcloud.um.ui.DoMainChatRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name="cn.rongcloud.um.ui.DoMainGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name="cn.rongcloud.um.ui.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="cn.rongcloud.um"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.rongcloud.um.ui.ParameterSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name="cn.rongcloud.um.ui.NavFileSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name="cn.rongcloud.um.ui.LoginActivity"
+            android:exported="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.rongcloud.um.ui.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name="cn.rongcloud.um.ui.MyConversationActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="cn.rongcloud.um"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.rongcloud.um.ui.DoMainMessageActivity"
+            android:exported="false" />
+        <!-- oppo相关  start -->
+        <service
+            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+            android:exported="true"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE" >
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+            android:exported="true"
+            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE" >
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="io.rong.push.notification.RongBridgeActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="io.rong.push.notification.RongBridgeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="io.rong.push.notification.RongBridgeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- oppo相关  end -->
+        <!-- vivo    start -->
+        <service
+            android:name="com.vivo.push.sdk.service.CommandClientService"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="io.rong.push.platform.vivo.VivoPushMessageReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="4d406f5435042a5002acbaa7ac26e4a2" />
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="105504865" />
+        <!-- vivo end -->
+        <!-- xiaomi start -->
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.push.platform.mi.MiMessageReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <!-- xiaomi end -->
+
+        <receiver
+            android:name="cn.rongcloud.um.custom.CustomPushMessageReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.THIRD_PARTY_PUSH_STATE" />
+            </intent-filter>
+        </receiver>
+        <!-- 该字段大于等于480，则表示支持点击消息直接打开应用activity，优化启动慢问题。 -->
+        <meta-data
+            android:name="sdk_version_vivo"
+            android:value="484" />
+        <meta-data
+            android:name="local_iv"
+            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+        <meta-data
+            android:name="sdkVersion"
+            android:value="3000" />
+
+        <provider
+            android:name="com.hjq.logcat.LogcatProvider"
+            android:authorities="cn.rongcloud.um.log.provider"
+            android:exported="false"
+            android:initOrder="110" />
+
+        <activity
+            android:name="com.hjq.logcat.LogcatActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service android:name="com.hjq.logcat.LogcatService" />
+
+        <activity
+            android:name="io.rong.imkit.conversationlist.RongConversationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.conversation.RongConversationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.subconversationlist.RongSubConversationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.feature.mention.MentionMemberSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.activity.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.activity.FilePreviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.imkit.activity.PicturePagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.imkit.activity.ForwardSelectConversationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.activity.CombineWebViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.activity.WebFilePreviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.activity.CombinePicturePagerActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="io.rong.imkit.activity.GIFPreviewActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- start图库配置项 -->
+        <provider
+            android:name="io.rong.imkit.picture.PictureFileProvider"
+            android:authorities="cn.rongcloud.um.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+
+        <activity
+            android:name="io.rong.imkit.picture.PictureSelectorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.picture.PictureSelectorCameraEmptyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Picture.Theme.Translucent" />
+        <activity
+            android:name="io.rong.imkit.picture.PicturePreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.picture.PictureVideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" /> <!-- end图库配置项 -->
+        <meta-data
+            android:name="rc.imkit"
+            android:value="io.rong.imkit.RongIM" />
+
+        <service
+            android:name="com.meizu.cloud.pushsdk.NotificationService"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver"
+            android:exported="false"
+            android:permission="com.meizu.flyme.permission.PUSH" >
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="io.rong.imlib.chatroom.base.ChatRoomContentProvider"
+            android:authorities="cn.rongcloud.um.rong.ChatRoomContentProvider" />
+        <provider
+            android:name="io.rong.imlib.location.base.LocationContentProvider"
+            android:authorities="cn.rongcloud.um.rong.LocationContentProvider" />
+        <provider
+            android:name="io.rong.imlib.discussion.base.DiscussionContentProvider"
+            android:authorities="cn.rongcloud.um.rong.DiscussionContentProvider" />
+        <provider
+            android:name="io.rong.imlib.cs.base.CustomServiceContentProvider"
+            android:authorities="cn.rongcloud.um.rong.CustomServiceContentProvider" />
+        <provider
+            android:name="io.rong.imlib.publicservice.base.PublicServiceContentProvider"
+            android:authorities="cn.rongcloud.um.rong.PublicServiceContentProvider" />
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" /> <!-- 必选： SDK 核心功能 -->
+        <service
+            android:name="io.rong.push.rongpush.PushService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process="io.rong.push" /> <!-- push 相关事件接收器 -->
+        <receiver
+            android:name="io.rong.push.rongpush.PushReceiver"
+            android:exported="true"
+            android:process="io.rong.push" > <!-- 此处进程可以改名，名称需要和PushService所在进程统一 -->
+            <!-- 心跳事件和网络切换事件监听,必须 -->
+            <intent-filter>
+                <action android:name="io.rong.push.intent.action.HEART_BEAT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <!-- 部分用户事件监听, 用来提高推送拉活率; 可移除 -->
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

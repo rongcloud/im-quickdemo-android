@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/tab_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:duplicateParentState="true"
+        android:scaleType="fitXY"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tab_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/tab_icon"
+        android:layout_marginBottom="3dp"
+        android:textColor="#ffa63a0e"
+        android:textSize="11sp"
+        android:text="xaaasddddddddd"
+        android:textStyle="bold"
+        tools:text="folder" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/tab_icon"
+        android:background="@drawable/rect_round_red"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="5"
+        android:textColor="#ffffff"
+        android:textSize="9sp"
+        android:visibility="gone"/>
+</RelativeLayout>

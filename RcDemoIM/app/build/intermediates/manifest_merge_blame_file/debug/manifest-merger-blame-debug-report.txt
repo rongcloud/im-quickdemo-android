@@ -1,0 +1,804 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="cn.rongcloud.um"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:5:22-64
+12    <!-- 旧 oppo 推送权限相关 -->
+13    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+13-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:7:5-86
+13-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:7:22-83
+14    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+14-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:8:5-85
+14-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:8:22-82
+15    <!-- xiaomi -->
+16    <permission
+17        android:name="cn.rongcloud.um.permission.MIPUSH_RECEIVE"
+17-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:11:9-66
+18        android:protectionLevel="signature" />
+18-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:12:9-44
+19
+20    <uses-permission android:name="cn.rongcloud.um.permission.MIPUSH_RECEIVE" />
+20-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:13:22-79
+21
+22    <!-- 外部存储读写权限 -->
+23    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+23-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:10:5-80
+23-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:10:22-77
+24    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 前台 Service 权限 -->
+24-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:11:5-81
+24-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:11:22-78
+25    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 拍照 -->
+25-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:14:5-77
+25-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:14:22-74
+26    <uses-permission android:name="android.permission.CAMERA" /> <!-- 拍照等 -->
+26-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:11:5-65
+26-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:11:22-62
+27    <uses-permission android:name="android.permission.VIBRATE" />
+27-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:13:5-66
+27-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:13:22-63
+28    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> <!-- 网络 -->
+28-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:14:5-73
+28-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:14:22-70
+29    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+29-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:16:5-76
+29-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:16:22-73
+30    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+30-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:18:5-79
+30-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:18:22-76
+31    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 录音权限，语音消息使用 -->
+31-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:19:5-76
+31-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:19:22-73
+32    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+32-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:21:5-71
+32-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:21:22-68
+33    <uses-permission android:name="com.meizu.flyme.permission.PUSH" /> <!-- 消息通道保活 -->
+33-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:15:5-71
+33-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:15:22-68
+34    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 定位，如果您需要定位相关的功能，可以打开以下注释 -->
+34-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:17:5-68
+34-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:17:22-65
+35    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+36    <uses-permission android:name="cn.rongcloud.um.permission.RONG_ACCESS_RECEIVER" /> <!-- 融云自定义接收广播权限，用于广播接收 -->
+36-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:21:5-88
+36-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:21:22-85
+37    <permission
+37-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:24:5-26:47
+38        android:name="cn.rongcloud.um.permission.RONG_ACCESS_RECEIVER"
+38-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:25:9-72
+39        android:protectionLevel="signature" />
+39-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:26:9-44
+40
+41    <application
+41-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:15:5-200:19
+42        android:name="cn.rongcloud.um.base.MyApplication"
+42-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:16:9-43
+43        android:allowBackup="true"
+43-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:17:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.5.0] /Users/l/.gradle/caches/transforms-3/4cb2d3ae910a25e4d3b75b6b0d8d1b11/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:extractNativeLibs="false"
+47        android:icon="@mipmap/seal_app_logo"
+47-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:18:9-45
+48        android:label="@string/app_name"
+48-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:19:9-41
+49        android:networkSecurityConfig="@xml/network_security_config"
+49-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:20:9-69
+50        android:roundIcon="@mipmap/seal_app_logo"
+50-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:21:9-50
+51        android:supportsRtl="true"
+51-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:22:9-35
+52        android:theme="@style/Theme.RcDemoIM" >
+52-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:23:9-46
+53        <activity
+53-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:24:9-26:40
+54            android:name="cn.rongcloud.um.ui.MyMentionMemberSelectActivity"
+54-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:25:13-61
+55            android:exported="false" />
+55-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:26:13-37
+56        <activity
+56-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:27:9-29:40
+57            android:name="cn.rongcloud.um.ui.LanguageSettingActivity"
+57-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:28:13-55
+58            android:exported="false" />
+58-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:29:13-37
+59        <activity
+59-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:30:9-32:40
+60            android:name="cn.rongcloud.um.ui.DoMainUltraGroupActivity"
+60-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:31:13-56
+61            android:exported="false" />
+61-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:32:13-37
+62        <activity
+62-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:33:9-35:40
+63            android:name="cn.rongcloud.um.ui.DoMainChatRoomActivity"
+63-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:34:13-54
+64            android:exported="false" />
+64-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:35:13-37
+65        <activity
+65-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:36:9-38:40
+66            android:name="cn.rongcloud.um.ui.DoMainGroupActivity"
+66-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:37:13-51
+67            android:exported="false" />
+67-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:38:13-37
+68        <activity
+68-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:39:9-55:20
+69            android:name="cn.rongcloud.um.ui.MainActivity"
+69-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:40:13-44
+70            android:exported="true"
+70-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:41:13-36
+71            android:launchMode="singleTop"
+71-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:42:13-43
+72            android:screenOrientation="portrait"
+72-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:43:13-49
+73            android:windowSoftInputMode="stateHidden|adjustResize" >
+73-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:44:13-67
+74            <intent-filter>
+74-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:45:13-54:29
+75                <action android:name="android.intent.action.VIEW" />
+75-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:46:17-69
+75-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:46:25-66
+76
+77                <category android:name="android.intent.category.DEFAULT" />
+77-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:17-76
+77-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:27-73
+78
+79                <data
+80                    android:host="cn.rongcloud.um"
+80-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:51:21-52
+81                    android:pathPrefix="/conversationlist"
+81-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:52:21-59
+82                    android:scheme="rong" />
+82-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:53:21-42
+83            </intent-filter>
+84        </activity>
+85        <activity
+85-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:56:9-58:40
+86            android:name="cn.rongcloud.um.ui.ParameterSettingActivity"
+86-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:57:13-56
+87            android:exported="false" />
+87-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:58:13-37
+88        <activity
+88-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:59:9-61:40
+89            android:name="cn.rongcloud.um.ui.NavFileSettingActivity"
+89-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:60:13-54
+90            android:exported="false" />
+90-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:61:13-37
+91        <activity
+91-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:62:9-71:20
+92            android:name="cn.rongcloud.um.ui.LoginActivity"
+92-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:63:13-45
+93            android:exported="true"
+93-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:64:13-36
+94            android:launchMode="singleTask" >
+94-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:65:13-44
+95            <intent-filter>
+95-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:66:13-70:29
+96                <action android:name="android.intent.action.MAIN" />
+96-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:67:17-69
+96-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:67:25-66
+97
+98                <category android:name="android.intent.category.LAUNCHER" />
+98-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:69:17-77
+98-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:69:27-74
+99            </intent-filter>
+100        </activity>
+101        <activity
+101-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:72:9-74:40
+102            android:name="cn.rongcloud.um.ui.SettingActivity"
+102-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:73:13-47
+103            android:exported="false" />
+103-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:74:13-37
+104        <activity
+104-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:75:9-86:20
+105            android:name="cn.rongcloud.um.ui.MyConversationActivity"
+105-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:76:13-54
+106            android:exported="true" >
+106-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:77:13-36
+107            <intent-filter>
+107-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:78:13-85:29
+108                <action android:name="android.intent.action.VIEW" />
+108-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:46:17-69
+108-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:46:25-66
+109
+110                <category android:name="android.intent.category.DEFAULT" />
+110-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:17-76
+110-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:27-73
+111
+112                <data
+113                    android:host="cn.rongcloud.um"
+113-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:51:21-52
+114                    android:pathPrefix="/conversation/"
+114-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:52:21-59
+115                    android:scheme="rong" />
+115-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:53:21-42
+116            </intent-filter>
+117        </activity>
+118        <activity
+118-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:87:9-89:40
+119            android:name="cn.rongcloud.um.ui.DoMainMessageActivity"
+119-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:88:13-53
+120            android:exported="false" />
+120-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:89:13-37
+121        <!-- oppo相关  start -->
+122        <service
+122-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:91:9-98:19
+123            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+123-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:92:13-92
+124            android:exported="true"
+124-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:93:13-36
+125            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE" >
+125-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:94:13-77
+126            <intent-filter>
+126-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:95:13-97:29
+127                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+127-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:96:17-85
+127-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:96:25-82
+128            </intent-filter>
+129        </service>
+130        <service
+130-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:99:9-107:19
+131            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+131-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:100:13-82
+132            android:exported="true"
+132-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:101:13-36
+133            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE" >
+133-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:102:13-77
+134            <intent-filter>
+134-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:103:13-106:29
+135                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+135-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:104:17-84
+135-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:104:25-81
+136                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+136-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:105:17-82
+136-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:105:25-79
+137            </intent-filter>
+138        </service>
+139
+140        <activity
+140-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:109:9-119:20
+141            android:name="io.rong.push.notification.RongBridgeActivity"
+141-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:110:13-72
+142            android:enabled="true"
+142-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:111:13-35
+143            android:exported="true"
+143-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:112:13-36
+144            android:launchMode="singleInstance"
+144-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:113:13-48
+145            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+145-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:114:13-72
+146            <intent-filter>
+146-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:115:13-118:29
+147                <action android:name="io.rong.push.notification.RongBridgeActivity" />
+147-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:116:17-94
+147-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:116:25-84
+148
+149                <category android:name="android.intent.category.DEFAULT" />
+149-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:17-76
+149-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:27-73
+150            </intent-filter>
+151            <intent-filter>
+151-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:70:13-75:29
+152                <action android:name="android.intent.action.VIEW" />
+152-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:46:17-69
+152-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:46:25-66
+153                <action android:name="io.rong.push.notification.RongBridgeActivity" />
+153-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:116:17-94
+153-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:116:25-84
+154
+155                <category android:name="android.intent.category.DEFAULT" />
+155-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:17-76
+155-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:27-73
+156            </intent-filter>
+157        </activity>
+158        <!-- oppo相关  end -->
+159        <!-- vivo    start -->
+160        <service
+160-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:122:9-124:38
+161            android:name="com.vivo.push.sdk.service.CommandClientService"
+161-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:123:13-74
+162            android:exported="true" />
+162-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:124:13-36
+163
+164        <activity
+164-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:125:9-129:74
+165            android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+165-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:126:13-69
+166            android:exported="false"
+166-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:127:13-37
+167            android:screenOrientation="portrait"
+167-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:128:13-49
+168            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+168-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:129:13-72
+169
+170        <receiver
+170-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:132:9-138:20
+171            android:name="io.rong.push.platform.vivo.VivoPushMessageReceiver"
+171-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:132:19-84
+172            android:exported="true" >
+172-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:133:13-36
+173            <intent-filter>
+173-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:134:13-137:29
+174                <action android:name="com.vivo.pushclient.action.RECEIVE" />
+174-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:136:17-77
+174-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:136:25-74
+175            </intent-filter>
+176        </receiver>
+177
+178        <meta-data
+178-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:139:9-141:64
+179            android:name="com.vivo.push.api_key"
+179-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:140:13-49
+180            android:value="4d406f5435042a5002acbaa7ac26e4a2" />
+180-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:141:13-61
+181        <meta-data
+181-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:142:9-144:41
+182            android:name="com.vivo.push.app_id"
+182-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:143:13-48
+183            android:value="105504865" />
+183-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:144:13-38
+184        <!-- vivo end -->
+185        <!-- xiaomi start -->
+186        <service
+186-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:147:9-96
+187            android:name="com.xiaomi.push.service.XMPushService"
+187-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:147:18-70
+188            android:enabled="true" />
+188-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:147:71-93
+189        <service
+189-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:148:9-123
+190            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+190-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:148:18-73
+191            android:enabled="true"
+191-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:148:74-96
+192            android:exported="true" />
+192-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:148:97-120
+193        <service
+193-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:149:9-101
+194            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+194-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:149:18-75
+195            android:enabled="true" />
+195-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:149:76-98
+196
+197        <activity
+197-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:152:9-158:20
+198            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+198-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:153:13-77
+199            android:enabled="true"
+199-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:157:13-35
+200            android:exported="true"
+200-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:156:13-36
+201            android:launchMode="singleInstance"
+201-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:155:13-48
+202            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+202-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:154:13-72
+203        </activity>
+204
+205        <service
+205-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:160:9-164:72
+206            android:name="com.xiaomi.push.service.XMJobService"
+206-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:161:13-64
+207            android:enabled="true"
+207-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:162:13-35
+208            android:exported="false"
+208-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:163:13-37
+209            android:permission="android.permission.BIND_JOB_SERVICE" />
+209-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:164:13-69
+210
+211        <receiver
+211-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:167:9-172:20
+212            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+212-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:167:19-89
+213            android:exported="true" >
+213-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:167:90-113
+214            <intent-filter>
+214-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:168:13-171:29
+215                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+215-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:169:17-79
+215-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:169:25-76
+216
+217                <category android:name="android.intent.category.DEFAULT" />
+217-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:17-76
+217-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:27-73
+218            </intent-filter>
+219        </receiver>
+220        <receiver
+220-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:173:9-177:20
+221            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+221-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:173:19-80
+222            android:exported="false" >
+222-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:173:81-105
+223            <intent-filter>
+223-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:174:13-176:29
+224                <action android:name="com.xiaomi.push.PING_TIMER" />
+224-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:175:17-69
+224-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:175:25-66
+225            </intent-filter>
+226        </receiver>
+227        <receiver
+227-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:178:9-188:20
+228            android:name="io.rong.push.platform.mi.MiMessageReceiver"
+228-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:178:19-76
+229            android:exported="true" >
+229-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:178:77-100
+230            <intent-filter>
+230-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:179:13-181:29
+231                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+231-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:180:17-76
+231-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:180:25-73
+232            </intent-filter>
+233            <intent-filter>
+233-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:182:13-184:29
+234                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+234-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:183:17-76
+234-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:183:25-73
+235            </intent-filter>
+236            <intent-filter>
+236-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:185:13-187:29
+237                <action android:name="com.xiaomi.mipush.ERROR" />
+237-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:186:17-66
+237-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:186:25-63
+238            </intent-filter>
+239        </receiver>
+240        <!-- xiaomi end -->
+241
+242        <receiver
+242-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:191:9-199:20
+243            android:name="cn.rongcloud.um.custom.CustomPushMessageReceiver"
+243-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:192:13-61
+244            android:exported="true" >
+244-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:193:13-36
+245            <intent-filter>
+245-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:194:13-198:29
+246                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+246-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:195:17-78
+246-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:195:25-75
+247                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+247-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:196:17-78
+247-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:196:25-75
+248                <action android:name="io.rong.push.intent.THIRD_PARTY_PUSH_STATE" />
+248-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:197:17-85
+248-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:197:25-82
+249            </intent-filter>
+250        </receiver>
+251        <!-- 该字段大于等于480，则表示支持点击消息直接打开应用activity，优化启动慢问题。 -->
+252        <meta-data
+252-->[vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:16:9-18:35
+253            android:name="sdk_version_vivo"
+253-->[vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:17:13-44
+254            android:value="484" />
+254-->[vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:18:13-32
+255        <meta-data
+255-->[vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:24:9-26:295
+256            android:name="local_iv"
+256-->[vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:25:13-36
+257            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+257-->[vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:26:13-292
+258        <meta-data
+258-->[push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:12:9-14:36
+259            android:name="sdkVersion"
+259-->[push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:13:13-38
+260            android:value="3000" />
+260-->[push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:14:13-33
+261
+262        <provider
+262-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:17:9-21:39
+263            android:name="com.hjq.logcat.LogcatProvider"
+263-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:18:13-57
+264            android:authorities="cn.rongcloud.um.log.provider"
+264-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:19:13-64
+265            android:exported="false"
+265-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:20:13-37
+266            android:initOrder="110" />
+266-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:21:13-36
+267
+268        <activity
+268-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:23:9-28:57
+269            android:name="com.hjq.logcat.LogcatActivity"
+269-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:24:13-57
+270            android:configChanges="orientation|screenSize|keyboardHidden"
+270-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:25:13-74
+271            android:launchMode="singleInstance"
+271-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:26:13-48
+272            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+272-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:27:13-69
+273            android:windowSoftInputMode="stateHidden" />
+273-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:28:13-54
+274
+275        <service android:name="com.hjq.logcat.LogcatService" />
+275-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:30:9-64
+275-->[com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:30:18-61
+276
+277        <activity
+277-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:24:9-26:52
+278            android:name="io.rong.imkit.conversationlist.RongConversationListActivity"
+278-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:25:13-87
+279            android:screenOrientation="portrait" />
+279-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:26:13-49
+280        <activity
+280-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:27:9-29:52
+281            android:name="io.rong.imkit.conversation.RongConversationActivity"
+281-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:28:13-79
+282            android:screenOrientation="portrait" />
+282-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:29:13-49
+283        <activity
+283-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:30:9-32:52
+284            android:name="io.rong.imkit.subconversationlist.RongSubConversationListActivity"
+284-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:31:13-93
+285            android:screenOrientation="portrait" />
+285-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:32:13-49
+286        <activity
+286-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:33:9-35:52
+287            android:name="io.rong.imkit.feature.mention.MentionMemberSelectActivity"
+287-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:34:13-85
+288            android:screenOrientation="portrait" />
+288-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:35:13-49
+289        <activity
+289-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:36:9-38:52
+290            android:name="io.rong.imkit.activity.RongWebviewActivity"
+290-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:37:13-70
+291            android:screenOrientation="portrait" />
+291-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:38:13-49
+292        <activity
+292-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:39:9-46:20
+293            android:name="io.rong.imkit.activity.FilePreviewActivity"
+293-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:40:13-70
+294            android:exported="false"
+294-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:41:13-37
+295            android:screenOrientation="portrait" >
+295-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:42:13-49
+296            <intent-filter>
+296-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:43:13-45:29
+297                <category android:name="android.intent.category.DEFAULT" />
+297-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:17-76
+297-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:27-73
+298            </intent-filter>
+299        </activity>
+300        <activity
+300-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:47:9-55:20
+301            android:name="io.rong.imkit.activity.PicturePagerActivity"
+301-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:48:13-71
+302            android:configChanges="orientation|keyboardHidden|screenSize"
+302-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:49:13-74
+303            android:exported="false"
+303-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:50:13-37
+304            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+304-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:51:13-71
+305            <intent-filter>
+305-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:43:13-45:29
+306                <category android:name="android.intent.category.DEFAULT" />
+306-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:17-76
+306-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:27-73
+307            </intent-filter>
+308        </activity>
+309        <activity
+309-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:56:9-58:52
+310            android:name="io.rong.imkit.activity.ForwardSelectConversationActivity"
+310-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:57:13-84
+311            android:screenOrientation="portrait" />
+311-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:58:13-49
+312        <activity
+312-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:59:9-62:52
+313            android:name="io.rong.imkit.activity.CombineWebViewActivity"
+313-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:60:13-73
+314            android:exported="false"
+314-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:61:13-37
+315            android:screenOrientation="portrait" />
+315-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:62:13-49
+316        <activity
+316-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:63:9-66:52
+317            android:name="io.rong.imkit.activity.WebFilePreviewActivity"
+317-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:64:13-73
+318            android:exported="false"
+318-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:65:13-37
+319            android:screenOrientation="portrait" />
+319-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:66:13-49
+320        <activity
+320-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:67:9-70:74
+321            android:name="io.rong.imkit.activity.CombinePicturePagerActivity"
+321-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:68:13-78
+322            android:exported="false"
+322-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:69:13-37
+323            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+323-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:70:13-71
+324        <activity
+324-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:71:9-74:74
+325            android:name="io.rong.imkit.activity.GIFPreviewActivity"
+325-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:72:13-69
+326            android:exported="false"
+326-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:73:13-37
+327            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- start图库配置项 -->
+327-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:74:13-71
+328        <provider
+328-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:77:9-85:20
+329            android:name="io.rong.imkit.picture.PictureFileProvider"
+329-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:78:13-69
+330            android:authorities="cn.rongcloud.um.provider"
+330-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:79:13-60
+331            android:exported="false"
+331-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:80:13-37
+332            android:grantUriPermissions="true" >
+332-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:81:13-47
+333            <meta-data
+333-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:82:13-84:56
+334                android:name="android.support.FILE_PROVIDER_PATHS"
+334-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:83:17-67
+335                android:resource="@xml/rc_file_path" />
+335-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:84:17-53
+336        </provider>
+337
+338        <activity
+338-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:87:9-90:52
+339            android:name="io.rong.imkit.picture.PictureSelectorActivity"
+339-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:88:13-73
+340            android:configChanges="orientation|keyboardHidden|screenSize"
+340-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:89:13-74
+341            android:screenOrientation="portrait" />
+341-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:90:13-49
+342        <activity
+342-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:91:9-95:64
+343            android:name="io.rong.imkit.picture.PictureSelectorCameraEmptyActivity"
+343-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:92:13-84
+344            android:configChanges="orientation|keyboardHidden|screenSize"
+344-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:93:13-74
+345            android:screenOrientation="portrait"
+345-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:94:13-49
+346            android:theme="@style/Picture.Theme.Translucent" />
+346-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:95:13-61
+347        <activity
+347-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:96:9-99:52
+348            android:name="io.rong.imkit.picture.PicturePreviewActivity"
+348-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:97:13-72
+349            android:configChanges="orientation|keyboardHidden|screenSize"
+349-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:98:13-74
+350            android:screenOrientation="portrait" />
+350-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:99:13-49
+351        <activity
+351-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:100:9-103:52
+352            android:name="io.rong.imkit.picture.PictureVideoPlayActivity"
+352-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:101:13-74
+353            android:configChanges="orientation|keyboardHidden|screenSize"
+353-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:102:13-74
+354            android:screenOrientation="portrait" /> <!-- end图库配置项 -->
+354-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:103:13-49
+355        <meta-data
+355-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:106:9-108:52
+356            android:name="rc.imkit"
+356-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:107:13-36
+357            android:value="io.rong.imkit.RongIM" />
+357-->[cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:108:13-49
+358
+359        <service
+359-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:18:9-20:39
+360            android:name="com.meizu.cloud.pushsdk.NotificationService"
+360-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:19:13-71
+361            android:exported="true" />
+361-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:20:13-36
+362
+363        <receiver
+363-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:22:9-29:20
+364            android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver"
+364-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:23:13-72
+365            android:exported="false"
+365-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:24:13-37
+366            android:permission="com.meizu.flyme.permission.PUSH" >
+366-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:25:13-65
+367            <intent-filter>
+367-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:26:13-28:29
+368                <action android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM" />
+368-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:27:17-82
+368-->[com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:27:25-79
+369            </intent-filter>
+370        </receiver>
+371
+372        <provider
+372-->[cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:10:9-12:83
+373            android:name="io.rong.imlib.chatroom.base.ChatRoomContentProvider"
+373-->[cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:11:13-79
+374            android:authorities="cn.rongcloud.um.rong.ChatRoomContentProvider" />
+374-->[cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:12:13-80
+375        <provider
+375-->[cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:10:9-12:83
+376            android:name="io.rong.imlib.location.base.LocationContentProvider"
+376-->[cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:11:13-79
+377            android:authorities="cn.rongcloud.um.rong.LocationContentProvider" />
+377-->[cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:12:13-80
+378        <provider
+378-->[cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:10:9-12:85
+379            android:name="io.rong.imlib.discussion.base.DiscussionContentProvider"
+379-->[cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:11:13-83
+380            android:authorities="cn.rongcloud.um.rong.DiscussionContentProvider" />
+380-->[cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:12:13-82
+381        <provider
+381-->[cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:10:9-12:88
+382            android:name="io.rong.imlib.cs.base.CustomServiceContentProvider"
+382-->[cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:11:13-78
+383            android:authorities="cn.rongcloud.um.rong.CustomServiceContentProvider" />
+383-->[cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:12:13-85
+384        <provider
+384-->[cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:10:9-12:88
+385            android:name="io.rong.imlib.publicservice.base.PublicServiceContentProvider"
+385-->[cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:11:13-89
+386            android:authorities="cn.rongcloud.um.rong.PublicServiceContentProvider" />
+386-->[cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:12:13-85
+387
+388        <service
+388-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:29:9-31:38
+389            android:name="io.rong.imlib.ipc.RongService"
+389-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:30:13-57
+390            android:process=":ipc" />
+390-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:31:13-35
+391
+392        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+392-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:33:9-72
+392-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:33:19-69
+393        <receiver
+393-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:34:9-36:38
+394            android:name="io.rong.imlib.HeartbeatReceiver"
+394-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:35:13-59
+395            android:process=":ipc" /> <!-- 必选： SDK 核心功能 -->
+395-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:36:13-35
+396        <service
+396-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:39:9-43:46
+397            android:name="io.rong.push.rongpush.PushService"
+397-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:40:13-61
+398            android:exported="true"
+398-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:41:13-36
+399            android:permission="android.permission.BIND_JOB_SERVICE"
+399-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:42:13-69
+400            android:process="io.rong.push" /> <!-- push 相关事件接收器 -->
+400-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:43:13-43
+401        <receiver
+401-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:46:9-62:20
+402            android:name="io.rong.push.rongpush.PushReceiver"
+402-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:47:13-62
+403            android:exported="true"
+403-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:48:13-36
+404            android:process="io.rong.push" > <!-- 此处进程可以改名，名称需要和PushService所在进程统一 -->
+404-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:49:13-43
+405            <!-- 心跳事件和网络切换事件监听,必须 -->
+406            <intent-filter>
+406-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:51:13-54:29
+407                <action android:name="io.rong.push.intent.action.HEART_BEAT" />
+407-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:52:17-80
+407-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:52:25-77
+408                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+408-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:169:17-79
+408-->/Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:169:25-76
+409            </intent-filter>
+410
+411            <!-- 部分用户事件监听, 用来提高推送拉活率; 可移除 -->
+412            <intent-filter>
+412-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:57:13-61:29
+413                <action android:name="android.intent.action.USER_PRESENT" />
+413-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:58:17-77
+413-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:58:25-74
+414                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+414-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:59:17-87
+414-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:59:25-84
+415                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+415-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:60:17-90
+415-->[cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:60:25-87
+416            </intent-filter>
+417        </receiver>
+418
+419        <service
+419-->[androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:25:9-28:40
+420            android:name="androidx.room.MultiInstanceInvalidationService"
+420-->[androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:26:13-74
+421            android:directBootAware="true"
+421-->[androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:27:13-43
+422            android:exported="false" />
+422-->[androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:28:13-37
+423    </application>
+424
+425</manifest>

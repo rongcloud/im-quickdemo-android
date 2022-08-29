@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.getActivity:Logcat:10.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.getActivity/Logcat/10.6/60333c1859ab0a4f20b64cca059a604912739d8d/Logcat-10.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

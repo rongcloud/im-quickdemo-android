@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                  
+                                                    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" tools:context="cn.rongcloud.um.ui.MainActivity">
+
+        <cn.rongcloud.um.widget.TopBar
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hideBack="true"
+            app:centerText="会话列表"
+            app:rightIcon="@drawable/icon_main_more"/>
+
+        <cn.rongcloud.um.widget.NoScrollViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/main_bottom_barr"
+            android:layout_below="@id/top_bar" />
+
+        <cn.rongcloud.um.widget.BottomTabLayout
+            android:id="@+id/main_bottom_barr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <cn.rongcloud.um.widget.BottomTabView
+                android:id="@+id/btv_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:tabIconNormal="@drawable/tab_chat_nor"
+                app:tabIconSelected="@drawable/tab_chat_sel"
+                app:tabText="会话列表"
+                app:tabTextColorNormal="#abadbb"
+                app:tabTextColorSelected="#0099ff"
+                app:tabTextSize="10sp" />
+
+            <cn.rongcloud.um.widget.BottomTabView
+                android:id="@+id/btv_course"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:tabIconNormal="@drawable/tab_contacts_nor"
+                app:tabIconSelected="@drawable/tab_contacts_sel"
+                app:tabText="功能清单"
+                app:tabTextColorNormal="#abadbb"
+                app:tabTextColorSelected="#0099ff"
+                app:tabTextSize="10sp" />
+
+            <cn.rongcloud.um.widget.BottomTabView
+                android:id="@+id/btv_consultation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:tabIconNormal="@drawable/tab_me_nor"
+                app:tabIconSelected="@drawable/tab_me_sel"
+                app:tabText="我的"
+                app:tabTextColorNormal="#abadbb"
+                app:tabTextColorSelected="#0099ff"
+                app:tabTextSize="10sp" />
+
+        </cn.rongcloud.um.widget.BottomTabLayout>
+    </RelativeLayout>
+         

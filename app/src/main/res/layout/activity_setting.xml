@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.rongcloud.um.ui.widget.TopBar
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:centerText="@string/rc_setting_text" />
+
+        <TextView
+            android:id="@+id/tv_navigation_file"
+            android:layout_marginTop="@dimen/rc_margin_size_15"
+            style="@style/TextStyle"
+            android:text="@string/rc_setting_text_navigation_file" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_color_black"/>
+        <TextView
+            android:id="@+id/tv_conversationlist_parameter"
+            style="@style/TextStyle"
+            android:text="@string/rc_conversationlist_text_parameter" />
+    </LinearLayout>
+</layout>

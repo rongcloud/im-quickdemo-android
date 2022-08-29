@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/popupwindow_sent_chat.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/popupwindow_sent_chat.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/fragment_domain_list.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/fragment_domain_list.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_do_main_group.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_do_main_group.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_my_mention_member_select.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_my_mention_member_select.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_login.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_login.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_domain_message.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_domain_message.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_setting.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_setting.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/title.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/title.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_parameter_setting.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_parameter_setting.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_do_main_chat_room.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_do_main_chat_room.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_language_setting.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_language_setting.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/rc_activity_my_conversation.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/rc_activity_my_conversation.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/fragment_mine.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/fragment_mine.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_do_main_ultra_group.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_do_main_ultra_group.xml"
+    },
+    {
+        "merged": "cn.rongcloud.um.app-mergeDebugResources-31:/layout/activity_nav_file_setting.xml",
+        "source": "cn.rongcloud.um.app-main-34:/layout/activity_nav_file_setting.xml"
+    }
+]

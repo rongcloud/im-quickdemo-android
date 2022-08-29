@@ -1,0 +1,1010 @@
+-- Merging decision tree log ---
+permission#cn.rongcloud.um.permission.MIPUSH_RECEIVE
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:10:5-12:47
+	android:protectionLevel
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:12:9-44
+	android:name
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:11:9-66
+uses-permission#cn.rongcloud.um.permission.MIPUSH_RECEIVE
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:13:5-82
+	android:name
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:13:22-79
+data
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:50:17-53:45
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:81:17-84:45
+	android:host
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:51:21-52
+	android:scheme
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:53:21-42
+	android:pathPrefix
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:52:21-59
+manifest
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:2:1-202:12
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:2:1-202:12
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:2:1-202:12
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:2:1-202:12
+MERGED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:2:1-29:12
+MERGED from [push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:2:1-17:12
+MERGED from [io.reactivex.rxjava3:rxandroid:3.0.0] /Users/l/.gradle/caches/transforms-3/fe2a29718372cc8ac4c792ebad16e840/transformed/jetified-rxandroid-3.0.0/AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.databinding:databinding-adapters:7.2.1] /Users/l/.gradle/caches/transforms-3/828f00dceb594239b7fd3d9682abe18d/transformed/databinding-adapters-7.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:7.2.1] /Users/l/.gradle/caches/transforms-3/4dbda0adc51ca75b28ba552ae995ffb7/transformed/databinding-runtime-7.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:2:1-33:12
+MERGED from [com.google.android.material:material:1.4.0] /Users/l/.gradle/caches/transforms-3/35c69b59585be5ab8e4b75884f21579b/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:2:1-111:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/l/.gradle/caches/transforms-3/269e4029f92be0f4884805b72f00e70b/transformed/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/l/.gradle/caches/transforms-3/28fd1c29d8271204d6ab96725f4f82b0/transformed/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:2:1-32:12
+MERGED from [cn.rongcloud.sdk:im_lib:5.2.4] /Users/l/.gradle/caches/transforms-3/68beaaa00ab4ee205cd87dd9c1ff839d/transformed/jetified-im_lib-5.2.4/AndroidManifest.xml:2:1-12:12
+MERGED from [cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:2:1-15:12
+MERGED from [cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:2:1-15:12
+MERGED from [cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:2:1-15:12
+MERGED from [cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:2:1-15:12
+MERGED from [cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:2:1-15:12
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:2:1-79:12
+MERGED from [cn.rongcloud.sdk:crash:1.0.2] /Users/l/.gradle/caches/transforms-3/a7e337bc55c1250301789b0a89e261ee/transformed/jetified-crash-1.0.2/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.databinding:viewbinding:7.2.1] /Users/l/.gradle/caches/transforms-3/91064bfcf3d834d346489b916c2e9ee8/transformed/jetified-viewbinding-7.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/l/.gradle/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/l/.gradle/caches/transforms-3/5be5ee84427262ab0c96eba4d80d0727/transformed/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/l/.gradle/caches/transforms-3/0905dc0fe66c0dd89c2a2cad1382bc77/transformed/fragment-1.3.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.3] /Users/l/.gradle/caches/transforms-3/e644571aa214ca51cb210170fddd8484/transformed/jetified-activity-1.2.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/l/.gradle/caches/transforms-3/02324ce9aa196044649066a4ea6356f9/transformed/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/l/.gradle/caches/transforms-3/28987daf94618d12a626039a1bcb819f/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/l/.gradle/caches/transforms-3/8a6303413022a75475e0d43fea7dc5ec/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/l/.gradle/caches/transforms-3/92389d42dacee50431fdf899a9097c97/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/l/.gradle/caches/transforms-3/44f59b81c87b69ad5a2c3b803c83780d/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/l/.gradle/caches/transforms-3/22af41d6efc01e2b1f6684642bfbf4e6/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/l/.gradle/caches/transforms-3/2ffd33c42ee9142780d270ad93a06b80/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/l/.gradle/caches/transforms-3/d55f9b1c6cb2370e24af439e7aff662a/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/l/.gradle/caches/transforms-3/026db242ee7fea5216ebc356e3ac7aeb/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/l/.gradle/caches/transforms-3/e1b23a5846fa69c62ae6c2763eaeb253/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/l/.gradle/caches/transforms-3/9b680f4524c73cf4651435f7b7ab96a9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/l/.gradle/caches/transforms-3/a9f454f90017dca7389400a6976be6d0/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/l/.gradle/caches/transforms-3/167a7615f5c326be626c34db5c113190/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0] /Users/l/.gradle/caches/transforms-3/4cb2d3ae910a25e4d3b75b6b0d8d1b11/transformed/core-1.5.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/l/.gradle/caches/transforms-3/b62f021449e53cd8f85a380c2a59df94/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/l/.gradle/caches/transforms-3/a607378c0a63614f9eaa72616e02d783/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/l/.gradle/caches/transforms-3/ce48164422c3447ff8a6246b4d8ea9c1/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/l/.gradle/caches/transforms-3/d6364469d2dca85a8f85e8beeb73ccf4/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/l/.gradle/caches/transforms-3/7c7a8c29ecce42e20d903e3a51f8df85/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/4ea78e3a5300ae57948a4528ff114bdc/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.1] /Users/l/.gradle/caches/transforms-3/1c7bd83db5c7b6ff56bf8f044581bd28/transformed/documentfile-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/l/.gradle/caches/transforms-3/daafd13ed6472e5d90ee94a442cae491/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/l/.gradle/caches/transforms-3/a32d82e6af18449b0f4026f574aea670/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/l/.gradle/caches/transforms-3/9edc97b4929ab5c71815cd3246cf40bf/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/l/.gradle/caches/transforms-3/50d1210be62fa0ff51eb398d1f0c84bc/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/l/.gradle/caches/transforms-3/229afd5b2ad29fd5e38d89c9d109bbfa/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/l/.gradle/caches/transforms-3/18bea7d8b6ce63feab6ed492d57d56cb/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/l/.gradle/caches/transforms-3/f11a2796b54455e05ab8603854e4e469/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/l/.gradle/caches/transforms-3/960e68e109eff4300e6a81e2c928da07/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/l/.gradle/caches/transforms-3/9837001944884569b30630bdad24af89/transformed/sqlite-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/l/.gradle/caches/transforms-3/e7dcb9099a010333ca261194f2428cd7/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/l/.gradle/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/l/.gradle/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.getActivity:XToast:8.5] /Users/l/.gradle/caches/transforms-3/b13e21c3235f5968028dbb0458ad2a2b/transformed/jetified-XToast-8.5/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/l/.gradle/caches/transforms-3/cc06242ea379559a7b6be7811f23a532/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:2:1-202:12
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:2:1-202:12
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:2:1-202:12
+	package
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:3:5-30
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:2:1-202:12
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:2:1-202:12
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:11:5-67
+MERGED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:11:5-67
+MERGED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:17:5-67
+MERGED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:17:5-67
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:11:5-67
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:11:5-67
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:13:5-67
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:7:5-86
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:7:22-83
+uses-permission#com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:8:5-85
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:8:22-82
+application
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:15:5-200:19
+MERGED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:13:5-27:19
+MERGED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:13:5-27:19
+MERGED from [push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:11:5-15:19
+MERGED from [push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:16:5-31:19
+MERGED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:16:5-31:19
+MERGED from [com.google.android.material:material:1.4.0] /Users/l/.gradle/caches/transforms-3/35c69b59585be5ab8e4b75884f21579b/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0] /Users/l/.gradle/caches/transforms-3/35c69b59585be5ab8e4b75884f21579b/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
+MERGED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:23:5-109:19
+MERGED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:23:5-109:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/l/.gradle/caches/transforms-3/269e4029f92be0f4884805b72f00e70b/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/l/.gradle/caches/transforms-3/269e4029f92be0f4884805b72f00e70b/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:17:5-30:19
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:17:5-30:19
+MERGED from [cn.rongcloud.sdk:im_lib:5.2.4] /Users/l/.gradle/caches/transforms-3/68beaaa00ab4ee205cd87dd9c1ff839d/transformed/jetified-im_lib-5.2.4/AndroidManifest.xml:9:5-10:19
+MERGED from [cn.rongcloud.sdk:im_lib:5.2.4] /Users/l/.gradle/caches/transforms-3/68beaaa00ab4ee205cd87dd9c1ff839d/transformed/jetified-im_lib-5.2.4/AndroidManifest.xml:9:5-10:19
+MERGED from [cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:9:5-13:19
+MERGED from [cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:9:5-13:19
+MERGED from [cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:9:5-13:19
+MERGED from [cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:9:5-13:19
+MERGED from [cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:9:5-13:19
+MERGED from [cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:9:5-13:19
+MERGED from [cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:9:5-13:19
+MERGED from [cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:9:5-13:19
+MERGED from [cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:9:5-13:19
+MERGED from [cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:9:5-13:19
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:28:5-77:19
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:28:5-77:19
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/l/.gradle/caches/transforms-3/5be5ee84427262ab0c96eba4d80d0727/transformed/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/l/.gradle/caches/transforms-3/5be5ee84427262ab0c96eba4d80d0727/transformed/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.5.0] /Users/l/.gradle/caches/transforms-3/4cb2d3ae910a25e4d3b75b6b0d8d1b11/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] /Users/l/.gradle/caches/transforms-3/4cb2d3ae910a25e4d3b75b6b0d8d1b11/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/l/.gradle/caches/transforms-3/a32d82e6af18449b0f4026f574aea670/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/l/.gradle/caches/transforms-3/a32d82e6af18449b0f4026f574aea670/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:24:5-29:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/l/.gradle/caches/transforms-3/e7dcb9099a010333ca261194f2428cd7/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/l/.gradle/caches/transforms-3/e7dcb9099a010333ca261194f2428cd7/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0] /Users/l/.gradle/caches/transforms-3/4cb2d3ae910a25e4d3b75b6b0d8d1b11/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:22:9-35
+	android:label
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:19:9-41
+	android:roundIcon
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:21:9-50
+	android:icon
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:18:9-45
+	android:allowBackup
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:23:9-46
+	android:networkSecurityConfig
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:20:9-69
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:16:9-43
+activity#cn.rongcloud.um.ui.MyMentionMemberSelectActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:24:9-26:40
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:25:13-61
+activity#cn.rongcloud.um.ui.LanguageSettingActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:27:9-29:40
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:28:13-55
+activity#cn.rongcloud.um.ui.DoMainUltraGroupActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:30:9-32:40
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:31:13-56
+activity#cn.rongcloud.um.ui.DoMainChatRoomActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:33:9-35:40
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:34:13-54
+activity#cn.rongcloud.um.ui.DoMainGroupActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:37:13-51
+activity#cn.rongcloud.um.ui.MainActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:39:9-55:20
+	android:screenOrientation
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:43:13-49
+	android:launchMode
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:42:13-43
+	android:windowSoftInputMode
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:44:13-67
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:41:13-36
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:40:13-44
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:host:cn.rongcloud.um+data:pathPrefix:/conversationlist+data:scheme:rong
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:45:13-54:29
+action#android.intent.action.VIEW
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:46:17-69
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:46:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:17-76
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:48:27-73
+activity#cn.rongcloud.um.ui.ParameterSettingActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:56:9-58:40
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:58:13-37
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:57:13-56
+activity#cn.rongcloud.um.ui.NavFileSettingActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:59:9-61:40
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:61:13-37
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:60:13-54
+activity#cn.rongcloud.um.ui.LoginActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:62:9-71:20
+	android:launchMode
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:65:13-44
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:64:13-36
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:63:13-45
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:66:13-70:29
+action#android.intent.action.MAIN
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:67:17-69
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:67:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:69:17-77
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:69:27-74
+activity#cn.rongcloud.um.ui.SettingActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:72:9-74:40
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:74:13-37
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:73:13-47
+activity#cn.rongcloud.um.ui.MyConversationActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:75:9-86:20
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:77:13-36
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:76:13-54
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:host:cn.rongcloud.um+data:pathPrefix:/conversation/+data:scheme:rong
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:78:13-85:29
+activity#cn.rongcloud.um.ui.DoMainMessageActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:87:9-89:40
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:89:13-37
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:88:13-53
+service#com.heytap.msp.push.service.CompatibleDataMessageCallbackService
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:91:9-98:19
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:93:13-36
+	android:permission
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:94:13-77
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:92:13-92
+intent-filter#action:name:com.coloros.mcs.action.RECEIVE_MCS_MESSAGE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:95:13-97:29
+action#com.coloros.mcs.action.RECEIVE_MCS_MESSAGE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:96:17-85
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:96:25-82
+service#com.heytap.msp.push.service.DataMessageCallbackService
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:99:9-107:19
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:101:13-36
+	android:permission
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:102:13-77
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:100:13-82
+intent-filter#action:name:com.heytap.mcs.action.RECEIVE_MCS_MESSAGE+action:name:com.heytap.msp.push.RECEIVE_MCS_MESSAGE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:103:13-106:29
+action#com.heytap.mcs.action.RECEIVE_MCS_MESSAGE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:104:17-84
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:104:25-81
+action#com.heytap.msp.push.RECEIVE_MCS_MESSAGE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:105:17-82
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:105:25-79
+activity#io.rong.push.notification.RongBridgeActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:109:9-119:20
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:64:9-76:20
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:64:9-76:20
+	android:enabled
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:111:13-35
+	android:launchMode
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:113:13-48
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:112:13-36
+	android:theme
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:114:13-72
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:110:13-72
+intent-filter#action:name:io.rong.push.notification.RongBridgeActivity+category:name:android.intent.category.DEFAULT
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:115:13-118:29
+action#io.rong.push.notification.RongBridgeActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:116:17-94
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:116:25-84
+service#com.vivo.push.sdk.service.CommandClientService
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:122:9-124:38
+MERGED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:20:9-22:39
+MERGED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:20:9-22:39
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:124:13-36
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:123:13-74
+activity#com.vivo.push.sdk.LinkProxyClientActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:125:9-129:74
+	android:screenOrientation
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:128:13-49
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:127:13-37
+	android:theme
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:129:13-72
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:126:13-69
+receiver#io.rong.push.platform.vivo.VivoPushMessageReceiver
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:132:9-138:20
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:133:13-36
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:132:19-84
+intent-filter#action:name:com.vivo.pushclient.action.RECEIVE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:134:13-137:29
+action#com.vivo.pushclient.action.RECEIVE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:136:17-77
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:136:25-74
+meta-data#com.vivo.push.api_key
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:139:9-141:64
+	android:value
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:141:13-61
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:140:13-49
+meta-data#com.vivo.push.app_id
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:142:9-144:41
+	android:value
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:144:13-38
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:143:13-48
+service#com.xiaomi.push.service.XMPushService
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:147:9-96
+	android:enabled
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:147:71-93
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:147:18-70
+service#com.xiaomi.mipush.sdk.PushMessageHandler
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:148:9-123
+	android:enabled
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:148:74-96
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:148:97-120
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:148:18-73
+service#com.xiaomi.mipush.sdk.MessageHandleService
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:149:9-101
+	android:enabled
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:149:76-98
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:149:18-75
+activity#com.xiaomi.mipush.sdk.NotificationClickedActivity
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:152:9-158:20
+	android:enabled
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:157:13-35
+	android:launchMode
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:155:13-48
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:156:13-36
+	android:theme
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:154:13-72
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:153:13-77
+service#com.xiaomi.push.service.XMJobService
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:160:9-164:72
+	android:enabled
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:162:13-35
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:163:13-37
+	android:permission
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:164:13-69
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:161:13-64
+receiver#com.xiaomi.push.service.receivers.NetworkStatusReceiver
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:167:9-172:20
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:167:90-113
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:167:19-89
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE+category:name:android.intent.category.DEFAULT
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:168:13-171:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:169:17-79
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:169:25-76
+receiver#com.xiaomi.push.service.receivers.PingReceiver
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:173:9-177:20
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:173:81-105
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:173:19-80
+intent-filter#action:name:com.xiaomi.push.PING_TIMER
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:174:13-176:29
+action#com.xiaomi.push.PING_TIMER
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:175:17-69
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:175:25-66
+receiver#io.rong.push.platform.mi.MiMessageReceiver
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:178:9-188:20
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:178:77-100
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:178:19-76
+intent-filter#action:name:com.xiaomi.mipush.RECEIVE_MESSAGE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:179:13-181:29
+action#com.xiaomi.mipush.RECEIVE_MESSAGE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:180:17-76
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:180:25-73
+intent-filter#action:name:com.xiaomi.mipush.MESSAGE_ARRIVED
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:182:13-184:29
+action#com.xiaomi.mipush.MESSAGE_ARRIVED
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:183:17-76
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:183:25-73
+intent-filter#action:name:com.xiaomi.mipush.ERROR
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:185:13-187:29
+action#com.xiaomi.mipush.ERROR
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:186:17-66
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:186:25-63
+receiver#cn.rongcloud.um.custom.CustomPushMessageReceiver
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:191:9-199:20
+	android:exported
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:193:13-36
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:192:13-61
+intent-filter#action:name:io.rong.push.intent.MESSAGE_ARRIVED+action:name:io.rong.push.intent.MESSAGE_CLICKED+action:name:io.rong.push.intent.THIRD_PARTY_PUSH_STATE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:194:13-198:29
+action#io.rong.push.intent.MESSAGE_ARRIVED
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:195:17-78
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:195:25-75
+action#io.rong.push.intent.MESSAGE_CLICKED
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:196:17-78
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:196:25-75
+action#io.rong.push.intent.THIRD_PARTY_PUSH_STATE
+ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:197:17-85
+	android:name
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml:197:25-82
+uses-sdk
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+MERGED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:7:5-9:41
+MERGED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:7:5-9:41
+MERGED from [push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava3:rxandroid:3.0.0] /Users/l/.gradle/caches/transforms-3/fe2a29718372cc8ac4c792ebad16e840/transformed/jetified-rxandroid-3.0.0/AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava3:rxandroid:3.0.0] /Users/l/.gradle/caches/transforms-3/fe2a29718372cc8ac4c792ebad16e840/transformed/jetified-rxandroid-3.0.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.databinding:databinding-adapters:7.2.1] /Users/l/.gradle/caches/transforms-3/828f00dceb594239b7fd3d9682abe18d/transformed/databinding-adapters-7.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-adapters:7.2.1] /Users/l/.gradle/caches/transforms-3/828f00dceb594239b7fd3d9682abe18d/transformed/databinding-adapters-7.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-runtime:7.2.1] /Users/l/.gradle/caches/transforms-3/4dbda0adc51ca75b28ba552ae995ffb7/transformed/databinding-runtime-7.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-runtime:7.2.1] /Users/l/.gradle/caches/transforms-3/4dbda0adc51ca75b28ba552ae995ffb7/transformed/databinding-runtime-7.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:7:5-44
+MERGED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:7:5-44
+MERGED from [com.google.android.material:material:1.4.0] /Users/l/.gradle/caches/transforms-3/35c69b59585be5ab8e4b75884f21579b/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] /Users/l/.gradle/caches/transforms-3/35c69b59585be5ab8e4b75884f21579b/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/l/.gradle/caches/transforms-3/269e4029f92be0f4884805b72f00e70b/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/l/.gradle/caches/transforms-3/269e4029f92be0f4884805b72f00e70b/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/l/.gradle/caches/transforms-3/28fd1c29d8271204d6ab96725f4f82b0/transformed/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/l/.gradle/caches/transforms-3/28fd1c29d8271204d6ab96725f4f82b0/transformed/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:7:5-9:41
+MERGED from [cn.rongcloud.sdk:im_lib:5.2.4] /Users/l/.gradle/caches/transforms-3/68beaaa00ab4ee205cd87dd9c1ff839d/transformed/jetified-im_lib-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_lib:5.2.4] /Users/l/.gradle/caches/transforms-3/68beaaa00ab4ee205cd87dd9c1ff839d/transformed/jetified-im_lib-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.rongcloud.sdk:crash:1.0.2] /Users/l/.gradle/caches/transforms-3/a7e337bc55c1250301789b0a89e261ee/transformed/jetified-crash-1.0.2/AndroidManifest.xml:7:5-9:41
+MERGED from [cn.rongcloud.sdk:crash:1.0.2] /Users/l/.gradle/caches/transforms-3/a7e337bc55c1250301789b0a89e261ee/transformed/jetified-crash-1.0.2/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.databinding:viewbinding:7.2.1] /Users/l/.gradle/caches/transforms-3/91064bfcf3d834d346489b916c2e9ee8/transformed/jetified-viewbinding-7.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.2.1] /Users/l/.gradle/caches/transforms-3/91064bfcf3d834d346489b916c2e9ee8/transformed/jetified-viewbinding-7.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/l/.gradle/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/l/.gradle/caches/transforms-3/72de3ad0e7ea8651a6e87e246ac967c6/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/l/.gradle/caches/transforms-3/5be5ee84427262ab0c96eba4d80d0727/transformed/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/l/.gradle/caches/transforms-3/5be5ee84427262ab0c96eba4d80d0727/transformed/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/l/.gradle/caches/transforms-3/0905dc0fe66c0dd89c2a2cad1382bc77/transformed/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/l/.gradle/caches/transforms-3/0905dc0fe66c0dd89c2a2cad1382bc77/transformed/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /Users/l/.gradle/caches/transforms-3/e644571aa214ca51cb210170fddd8484/transformed/jetified-activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /Users/l/.gradle/caches/transforms-3/e644571aa214ca51cb210170fddd8484/transformed/jetified-activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/l/.gradle/caches/transforms-3/02324ce9aa196044649066a4ea6356f9/transformed/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/l/.gradle/caches/transforms-3/02324ce9aa196044649066a4ea6356f9/transformed/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/l/.gradle/caches/transforms-3/28987daf94618d12a626039a1bcb819f/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/l/.gradle/caches/transforms-3/28987daf94618d12a626039a1bcb819f/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/l/.gradle/caches/transforms-3/8a6303413022a75475e0d43fea7dc5ec/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/l/.gradle/caches/transforms-3/8a6303413022a75475e0d43fea7dc5ec/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/l/.gradle/caches/transforms-3/92389d42dacee50431fdf899a9097c97/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/l/.gradle/caches/transforms-3/92389d42dacee50431fdf899a9097c97/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/l/.gradle/caches/transforms-3/44f59b81c87b69ad5a2c3b803c83780d/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/l/.gradle/caches/transforms-3/44f59b81c87b69ad5a2c3b803c83780d/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/l/.gradle/caches/transforms-3/22af41d6efc01e2b1f6684642bfbf4e6/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/l/.gradle/caches/transforms-3/22af41d6efc01e2b1f6684642bfbf4e6/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/l/.gradle/caches/transforms-3/2ffd33c42ee9142780d270ad93a06b80/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/l/.gradle/caches/transforms-3/2ffd33c42ee9142780d270ad93a06b80/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/l/.gradle/caches/transforms-3/d55f9b1c6cb2370e24af439e7aff662a/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/l/.gradle/caches/transforms-3/d55f9b1c6cb2370e24af439e7aff662a/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/l/.gradle/caches/transforms-3/026db242ee7fea5216ebc356e3ac7aeb/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/l/.gradle/caches/transforms-3/026db242ee7fea5216ebc356e3ac7aeb/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/l/.gradle/caches/transforms-3/e1b23a5846fa69c62ae6c2763eaeb253/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/l/.gradle/caches/transforms-3/e1b23a5846fa69c62ae6c2763eaeb253/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/l/.gradle/caches/transforms-3/9b680f4524c73cf4651435f7b7ab96a9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/l/.gradle/caches/transforms-3/9b680f4524c73cf4651435f7b7ab96a9/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/l/.gradle/caches/transforms-3/a9f454f90017dca7389400a6976be6d0/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/l/.gradle/caches/transforms-3/a9f454f90017dca7389400a6976be6d0/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/l/.gradle/caches/transforms-3/167a7615f5c326be626c34db5c113190/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/l/.gradle/caches/transforms-3/167a7615f5c326be626c34db5c113190/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0] /Users/l/.gradle/caches/transforms-3/4cb2d3ae910a25e4d3b75b6b0d8d1b11/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] /Users/l/.gradle/caches/transforms-3/4cb2d3ae910a25e4d3b75b6b0d8d1b11/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/l/.gradle/caches/transforms-3/b62f021449e53cd8f85a380c2a59df94/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/l/.gradle/caches/transforms-3/b62f021449e53cd8f85a380c2a59df94/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/l/.gradle/caches/transforms-3/a607378c0a63614f9eaa72616e02d783/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/l/.gradle/caches/transforms-3/a607378c0a63614f9eaa72616e02d783/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/l/.gradle/caches/transforms-3/ce48164422c3447ff8a6246b4d8ea9c1/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/l/.gradle/caches/transforms-3/ce48164422c3447ff8a6246b4d8ea9c1/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/l/.gradle/caches/transforms-3/d6364469d2dca85a8f85e8beeb73ccf4/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/l/.gradle/caches/transforms-3/d6364469d2dca85a8f85e8beeb73ccf4/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/l/.gradle/caches/transforms-3/7c7a8c29ecce42e20d903e3a51f8df85/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/l/.gradle/caches/transforms-3/7c7a8c29ecce42e20d903e3a51f8df85/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/4ea78e3a5300ae57948a4528ff114bdc/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/4ea78e3a5300ae57948a4528ff114bdc/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.1] /Users/l/.gradle/caches/transforms-3/1c7bd83db5c7b6ff56bf8f044581bd28/transformed/documentfile-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.1] /Users/l/.gradle/caches/transforms-3/1c7bd83db5c7b6ff56bf8f044581bd28/transformed/documentfile-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/l/.gradle/caches/transforms-3/daafd13ed6472e5d90ee94a442cae491/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/l/.gradle/caches/transforms-3/daafd13ed6472e5d90ee94a442cae491/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/l/.gradle/caches/transforms-3/a32d82e6af18449b0f4026f574aea670/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/l/.gradle/caches/transforms-3/a32d82e6af18449b0f4026f574aea670/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/l/.gradle/caches/transforms-3/9edc97b4929ab5c71815cd3246cf40bf/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/l/.gradle/caches/transforms-3/9edc97b4929ab5c71815cd3246cf40bf/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/l/.gradle/caches/transforms-3/50d1210be62fa0ff51eb398d1f0c84bc/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/l/.gradle/caches/transforms-3/50d1210be62fa0ff51eb398d1f0c84bc/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/l/.gradle/caches/transforms-3/229afd5b2ad29fd5e38d89c9d109bbfa/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/l/.gradle/caches/transforms-3/229afd5b2ad29fd5e38d89c9d109bbfa/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/l/.gradle/caches/transforms-3/18bea7d8b6ce63feab6ed492d57d56cb/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/l/.gradle/caches/transforms-3/18bea7d8b6ce63feab6ed492d57d56cb/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/l/.gradle/caches/transforms-3/f11a2796b54455e05ab8603854e4e469/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/l/.gradle/caches/transforms-3/f11a2796b54455e05ab8603854e4e469/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/l/.gradle/caches/transforms-3/960e68e109eff4300e6a81e2c928da07/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/l/.gradle/caches/transforms-3/960e68e109eff4300e6a81e2c928da07/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/l/.gradle/caches/transforms-3/9837001944884569b30630bdad24af89/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/l/.gradle/caches/transforms-3/9837001944884569b30630bdad24af89/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/l/.gradle/caches/transforms-3/e7dcb9099a010333ca261194f2428cd7/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/l/.gradle/caches/transforms-3/e7dcb9099a010333ca261194f2428cd7/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/l/.gradle/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/l/.gradle/caches/transforms-3/b1330398772e771d40914e2426861ea6/transformed/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/l/.gradle/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/l/.gradle/caches/transforms-3/bd2b858bc6569916fd0b165974e7ef03/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.getActivity:XToast:8.5] /Users/l/.gradle/caches/transforms-3/b13e21c3235f5968028dbb0458ad2a2b/transformed/jetified-XToast-8.5/AndroidManifest.xml:7:5-44
+MERGED from [com.github.getActivity:XToast:8.5] /Users/l/.gradle/caches/transforms-3/b13e21c3235f5968028dbb0458ad2a2b/transformed/jetified-XToast-8.5/AndroidManifest.xml:7:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/l/.gradle/caches/transforms-3/cc06242ea379559a7b6be7811f23a532/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/l/.gradle/caches/transforms-3/cc06242ea379559a7b6be7811f23a532/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		ADDED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/l/AndroidStudioProjects/im/support-im-android-debugdemo/RcDemoIM/app/src/main/AndroidManifest.xml
+meta-data#sdk_version_vivo
+ADDED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:16:9-18:35
+	android:value
+		ADDED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:18:13-32
+	android:name
+		ADDED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:17:13-44
+meta-data#local_iv
+ADDED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:24:9-26:295
+	android:value
+		ADDED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:26:13-292
+	android:name
+		ADDED from [vivo_pushSDK_v3.0.0.4_484.aar] /Users/l/.gradle/caches/transforms-3/3fc1aad118ef2db56e7cadb868a59d7f/transformed/jetified-vivo_pushSDK_v3.0.0.4_484/AndroidManifest.xml:25:13-36
+meta-data#sdkVersion
+ADDED from [push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:12:9-14:36
+	android:value
+		ADDED from [push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:14:13-33
+	android:name
+		ADDED from [push-3.0.0.aar] /Users/l/.gradle/caches/transforms-3/7fecbbe5d56e25647cc850ec5fd53f5a/transformed/jetified-push-3.0.0/AndroidManifest.xml:13:13-38
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:10:5-80
+MERGED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:9:5-80
+MERGED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:9:5-80
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:13:5-80
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:13:5-80
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:11:5-80
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:10:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:11:5-81
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:14:5-81
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:14:5-81
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:10:5-81
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:14:5-77
+	android:name
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:14:22-74
+provider#com.hjq.logcat.LogcatProvider
+ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:17:9-21:39
+	android:authorities
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:19:13-64
+	android:exported
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:20:13-37
+	android:initOrder
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:21:13-36
+	android:name
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:18:13-57
+activity#com.hjq.logcat.LogcatActivity
+ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:23:9-28:57
+	android:launchMode
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:26:13-48
+	android:windowSoftInputMode
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:28:13-54
+	android:configChanges
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:25:13-74
+	android:theme
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:27:13-69
+	android:name
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:24:13-57
+service#com.hjq.logcat.LogcatService
+ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:30:9-64
+	android:name
+		ADDED from [com.github.getActivity:Logcat:10.6] /Users/l/.gradle/caches/transforms-3/38747e22a5532aa5158bcd2d741e065b/transformed/jetified-Logcat-10.6/AndroidManifest.xml:30:18-61
+uses-permission#android.permission.CAMERA
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:11:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:13:5-66
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:13:22-63
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:14:5-73
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:14:22-70
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:16:5-76
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:16:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:18:5-79
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:12:5-79
+MERGED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:12:5-79
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:14:5-79
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:18:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:19:5-76
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:15:5-76
+MERGED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:19:22-73
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:21:5-71
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:21:22-68
+activity#io.rong.imkit.conversationlist.RongConversationListActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:24:9-26:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:26:13-49
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:25:13-87
+activity#io.rong.imkit.conversation.RongConversationActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:27:9-29:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:29:13-49
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:28:13-79
+activity#io.rong.imkit.subconversationlist.RongSubConversationListActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:30:9-32:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:32:13-49
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:31:13-93
+activity#io.rong.imkit.feature.mention.MentionMemberSelectActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:33:9-35:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:35:13-49
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:34:13-85
+activity#io.rong.imkit.activity.RongWebviewActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:36:9-38:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:38:13-49
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:37:13-70
+activity#io.rong.imkit.activity.FilePreviewActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:39:9-46:20
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:42:13-49
+	android:exported
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:40:13-70
+intent-filter#category:name:android.intent.category.DEFAULT
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:43:13-45:29
+activity#io.rong.imkit.activity.PicturePagerActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:47:9-55:20
+	android:exported
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:50:13-37
+	android:configChanges
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:49:13-74
+	android:theme
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:51:13-71
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:48:13-71
+activity#io.rong.imkit.activity.ForwardSelectConversationActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:56:9-58:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:58:13-49
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:57:13-84
+activity#io.rong.imkit.activity.CombineWebViewActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:59:9-62:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:62:13-49
+	android:exported
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:61:13-37
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:60:13-73
+activity#io.rong.imkit.activity.WebFilePreviewActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:63:9-66:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:66:13-49
+	android:exported
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:65:13-37
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:64:13-73
+activity#io.rong.imkit.activity.CombinePicturePagerActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:67:9-70:74
+	android:exported
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:69:13-37
+	android:theme
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:70:13-71
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:68:13-78
+activity#io.rong.imkit.activity.GIFPreviewActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:71:9-74:74
+	android:exported
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:73:13-37
+	android:theme
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:74:13-71
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:72:13-69
+provider#io.rong.imkit.picture.PictureFileProvider
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:77:9-85:20
+	android:grantUriPermissions
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:81:13-47
+	android:authorities
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:79:13-60
+	android:exported
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:80:13-37
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:78:13-69
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:82:13-84:56
+	android:resource
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:84:17-53
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:83:17-67
+activity#io.rong.imkit.picture.PictureSelectorActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:87:9-90:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:90:13-49
+	android:configChanges
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:89:13-74
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:88:13-73
+activity#io.rong.imkit.picture.PictureSelectorCameraEmptyActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:91:9-95:64
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:94:13-49
+	android:configChanges
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:93:13-74
+	android:theme
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:95:13-61
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:92:13-84
+activity#io.rong.imkit.picture.PicturePreviewActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:96:9-99:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:99:13-49
+	android:configChanges
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:98:13-74
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:97:13-72
+activity#io.rong.imkit.picture.PictureVideoPlayActivity
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:100:9-103:52
+	android:screenOrientation
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:103:13-49
+	android:configChanges
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:102:13-74
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:101:13-74
+meta-data#rc.imkit
+ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:106:9-108:52
+	android:value
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:108:13-49
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_kit:5.2.4] /Users/l/.gradle/caches/transforms-3/6b0a3ca247e32e6330ecda10bb4fb1cc/transformed/jetified-im_kit-5.2.4/AndroidManifest.xml:107:13-36
+uses-permission#com.meizu.flyme.permission.PUSH
+ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:15:5-71
+	android:name
+		ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:15:22-68
+service#com.meizu.cloud.pushsdk.NotificationService
+ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:18:9-20:39
+	android:exported
+		ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:20:13-36
+	android:name
+		ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:19:13-71
+receiver#com.meizu.cloud.pushsdk.MzPushSystemReceiver
+ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:22:9-29:20
+	android:exported
+		ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:24:13-37
+	android:permission
+		ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:25:13-65
+	android:name
+		ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:23:13-72
+intent-filter#action:name:com.meizu.flyme.push.intent.PUSH_SYSTEM
+ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:26:13-28:29
+action#com.meizu.flyme.push.intent.PUSH_SYSTEM
+ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:27:17-82
+	android:name
+		ADDED from [com.meizu.flyme.internet:push-internal:4.1.4] /Users/l/.gradle/caches/transforms-3/5a26eb8b755bc2e26dd56d86ec7800be/transformed/jetified-push-internal-4.1.4/AndroidManifest.xml:27:25-79
+provider#io.rong.imlib.chatroom.base.ChatRoomContentProvider
+ADDED from [cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:10:9-12:83
+	android:authorities
+		ADDED from [cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:12:13-80
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_chatroom:5.2.4] /Users/l/.gradle/caches/transforms-3/116d8a2569c6cf2a089d1c677890a1e4/transformed/jetified-im_chatroom-5.2.4/AndroidManifest.xml:11:13-79
+provider#io.rong.imlib.location.base.LocationContentProvider
+ADDED from [cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:10:9-12:83
+	android:authorities
+		ADDED from [cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:12:13-80
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_location:5.2.4] /Users/l/.gradle/caches/transforms-3/78b61220ad208a9c4c660c119d231c47/transformed/jetified-im_location-5.2.4/AndroidManifest.xml:11:13-79
+provider#io.rong.imlib.discussion.base.DiscussionContentProvider
+ADDED from [cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:10:9-12:85
+	android:authorities
+		ADDED from [cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:12:13-82
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_discussion:5.2.4] /Users/l/.gradle/caches/transforms-3/6fefd53c4a5e5d16c492fdb822a4331b/transformed/jetified-im_discussion-5.2.4/AndroidManifest.xml:11:13-83
+provider#io.rong.imlib.cs.base.CustomServiceContentProvider
+ADDED from [cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:10:9-12:88
+	android:authorities
+		ADDED from [cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:12:13-85
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_customservice:5.2.4] /Users/l/.gradle/caches/transforms-3/9386457c25ee210e2c6baf83713c44a0/transformed/jetified-im_customservice-5.2.4/AndroidManifest.xml:11:13-78
+provider#io.rong.imlib.publicservice.base.PublicServiceContentProvider
+ADDED from [cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:10:9-12:88
+	android:authorities
+		ADDED from [cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:12:13-85
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_publicservice:5.2.4] /Users/l/.gradle/caches/transforms-3/1f4f87bddeadcd5c177437ef7a06b7a4/transformed/jetified-im_publicservice-5.2.4/AndroidManifest.xml:11:13-89
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:17:22-65
+uses-permission#${applicationId}.permission.RONG_ACCESS_RECEIVER
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:21:5-88
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:21:22-85
+uses-permission#cn.rongcloud.um.permission.RONG_ACCESS_RECEIVER
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:21:5-88
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:21:22-85
+permission#${applicationId}.permission.RONG_ACCESS_RECEIVER
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:24:5-26:47
+	android:protectionLevel
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:26:9-44
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:25:9-72
+permission#cn.rongcloud.um.permission.RONG_ACCESS_RECEIVER
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:24:5-26:47
+	android:protectionLevel
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:26:9-44
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:25:9-72
+service#io.rong.imlib.ipc.RongService
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:29:9-31:38
+	android:process
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:31:13-35
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:30:13-57
+receiver#io.rong.imlib.ConnectChangeReceiver
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:33:9-72
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:33:19-69
+receiver#io.rong.imlib.HeartbeatReceiver
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:34:9-36:38
+	android:process
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:36:13-35
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:35:13-59
+service#io.rong.push.rongpush.PushService
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:39:9-43:46
+	android:process
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:43:13-43
+	android:exported
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:41:13-36
+	android:permission
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:42:13-69
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:40:13-61
+receiver#io.rong.push.rongpush.PushReceiver
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:46:9-62:20
+	android:process
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:49:13-43
+	android:exported
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:48:13-36
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:47:13-62
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE+action:name:io.rong.push.intent.action.HEART_BEAT
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:51:13-54:29
+action#io.rong.push.intent.action.HEART_BEAT
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:52:17-80
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:52:25-77
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED+action:name:android.intent.action.USER_PRESENT
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:57:13-61:29
+action#android.intent.action.USER_PRESENT
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:58:17-77
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:58:25-74
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:59:17-87
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:59:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:60:17-90
+	android:name
+		ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:60:25-87
+intent-filter#action:name:android.intent.action.VIEW+action:name:io.rong.push.notification.RongBridgeActivity+category:name:android.intent.category.DEFAULT
+ADDED from [cn.rongcloud.sdk:im_libcore:5.2.4] /Users/l/.gradle/caches/transforms-3/fa6fb2261a12d245e33e98d899df8310/transformed/jetified-im_libcore-5.2.4/AndroidManifest.xml:70:13-75:29
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.4.0] /Users/l/.gradle/caches/transforms-3/e2478ba536a1c76b438f71b85a8bc334/transformed/room-runtime-2.4.0/AndroidManifest.xml:26:13-74

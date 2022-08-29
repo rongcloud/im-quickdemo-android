@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RcDemoIM</string>
+    <string name="text_save">保存</string>
+    <string name="rc_login_text_login">登录</string>
+    <string name="rc_setting_text">配置</string>
+    <string name="rc_setting_text_navigation_file">配置导航和文件服务</string>
+    <string name="rc_setting_text_navigation_file_title">导航和文件服务</string>
+    <string name="rc_setting_text_push_language_title">推送多语言</string>
+    <string name="rc_conversationlist_text_parameter">配置会话列表页面参数</string>
+    <string name="rc_conversationlist_text_parameter_title">会话列表页面参数</string>
+    <string name="rc_conversationlist_tigs">如果不配置，本Demo默认展示单聊、群聊和系统会话，并且将系统会话聚合。</string>
+    <string name="rc_conversation_private">单聊</string>
+    <string name="rc_conversation_group">群聊</string>
+    <string name="rc_conversation_system">系统</string>
+</resources>

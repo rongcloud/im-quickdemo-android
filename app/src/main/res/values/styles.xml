@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopBar">
+        <attr name="centerText" format="string"/>
+        <attr name="rightText" format="string"/>
+        <attr name="hideBack" format="boolean"/>
+        <attr name="is_add_more" format="boolean" />
+        <attr name="right_add_icon" format="reference" />
+        <attr name="rightIcon" format="reference"/>
+        <attr name="centerTextSize" format="integer"/>
+        <attr name="right_textColor" format="color|reference"/>
+        <attr name="top_bar_background" format="reference"/>
+        <attr name="isShowDivider" format="boolean"/>
+        <attr name="finishimage" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="InputTextLinearLayout">
+        <attr name="leftText" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="BottomTabView">
+        <attr name="tabIconNormal" format="reference" />
+        <attr name="tabIconNormalString" format="string" />
+        <attr name="tabIconSelected" format="reference" />
+        <attr name="tabIconSelectedString" format="string" />
+        <attr name="tabTextColorNormal" format="color" />
+        <attr name="tabTextColorSelected" format="color" />
+        <attr name="tabText" format="string" />
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="tabIconWidth" format="dimension" />
+        <attr name="tabIconHeight" format="dimension" />
+    </declare-styleable>
+    <style name="TextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+    <style name="LineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+</resources>
