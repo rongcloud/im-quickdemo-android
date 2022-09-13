@@ -87,7 +87,7 @@ dependencies {
     api "io.reactivex.rxjava3:rxjava:3.0.13"
     api 'io.reactivex.rxjava3:rxandroid:3.0.0'
 
-    implementation 'cn.rongcloud.sdk:im_kit:5.2.4'
+    implementation 'cn.rongcloud.sdk:im_kit:5.2.5'
 
     //日志展示
     debugImplementation 'com.github.getActivity:Logcat:10.6'
