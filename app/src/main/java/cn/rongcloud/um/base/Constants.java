@@ -7,8 +7,8 @@ public final class Constants {
 
     public static final String BASE_URL = "https://api-cn.ronghub.com";
     public static final String SECRET = "xxx";
-    public static final String APP_KEY = "8luwapkv86del";
-    public static final String TOKEN = "yGITX1Lxge0scjJSxkJVcfMajyRYwFFmbplRLpSEGqw=@9tsf.cn.rongnav.com;9tsf.cn.rongcfg.com";
+    public static final String APP_KEY = "";// 传入业务申请的 AppKey
+    public static final String TOKEN = "";// 传入 AppKey 对应的 Token
     public static final String USER_ID = "user1";
     public static final String PRIVATE = "userid1";
     public static final String GROUP = "group1";

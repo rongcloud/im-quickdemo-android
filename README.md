@@ -9,12 +9,6 @@
 | 依赖库 | 版本 | 用途 |
 |---|---|---|
 | `cn.rongcloud.sdk:im_kit` | 5.40.1 | 融云 IM 核心 UI 套件 |
-| `cn.rongcloud.sdk.push:rong` | 5.40.1 | 融云推送核心 |
-| `cn.rongcloud.sdk.push:xiaomi` | 5.40.1 | 小米推送适配 |
-| `cn.rongcloud.sdk.push:oppo` | 5.40.1 | OPPO 推送适配 |
-| `cn.rongcloud.sdk.push:vivo` | 5.40.1 | vivo 推送适配 |
-| `com.huawei.hms:push` | 6.5.0.300 | 华为推送 |
-| `com.meizu.flyme.internet:push-internal` | 4.1.4 | 魅族推送 |
 | `com.squareup.retrofit2:retrofit` | 2.9.0 | 网络请求框架 |
 | `com.squareup.okhttp3:okhttp` | 4.9.1 | HTTP 客户端 |
 | `io.reactivex.rxjava3:rxjava` | 3.0.13 | 响应式编程 |
@@ -33,8 +27,6 @@
 
 | 参数 | 类型 | 说明 |
 |---|---|---|
-| `naviServer` | `String` | 自定义导航服务器地址（私有化部署时使用） |
-| `fileServer` | `String` | 自定义文件服务器地址（私有化部署时使用） |
 | `conversationType` | `String` | 会话列表中显示的会话类型（单聊/群聊/系统） |
 | `subConversationType` | `String` | 聚合会话列表中显示的会话类型 |
 
@@ -51,7 +43,6 @@
 | **群组 / 超级群** | 群聊、超级群会话演示 |
 | **@提醒** | 群内 @某人 功能演示（MentionMemberSelect） |
 | **多语言** | 切换 IM 界面语言 |
-| **推送支持** | 小米/华为/OPPO/vivo/魅族多厂商推送集成示例 |
 
 ## 5. 运行前准备
 
