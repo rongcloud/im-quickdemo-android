@@ -3,22 +3,47 @@ plugins {
     id 'com.huawei.agconnect'
 }
 
+configurations.configureEach {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-common:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+    }
+}
+
 android {
-    compileSdk 31
+    namespace "cn.rongcloud.um"
+    compileSdk 34
 
     defaultConfig {
         applicationId "cn.rongcloud.um"
         minSdk 23
-        targetSdk 31
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                //启用 rongpush，如不需要 RongPush 也可以禁用
+                RONG_PUSH_ENABLE : "true",
+                XIAOMI_APP_ID  : "\"9882303761517473625\"",
+                XIAOMI_APP_KEY : "\"9451747338625\"",
+                HW_PUSH_ENABLE : "true",
+                HONOR_APP_ID  : "xxxxxxxxxx",
+                MEIZU_APP_ID : "xxxxxxxx",
+                MEIZU_APP_KEY: "xxxxxxxx",
+                OPPO_APP_KEY   : "xxxxxxxx",
+                OPPO_APP_SECRET: "xxxxxxxx",
+                VIVO_APP_ID : "105504865",
+                VIVO_APP_KEY: "4d406f5435042a5002acbaa7ac26e4a2"
+
+        ]
     }
 
 
-    dataBinding {
-        enabled = true
+    buildFeatures {
+        dataBinding true
     }
     signingConfigs {
         release {
@@ -42,7 +67,7 @@ android {
             signingConfig signingConfigs.release
         }
 
-        release {
+        debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.debug
@@ -87,10 +112,14 @@ dependencies {
     api "io.reactivex.rxjava3:rxjava:3.0.13"
     api 'io.reactivex.rxjava3:rxandroid:3.0.0'
 
-    implementation 'cn.rongcloud.sdk:im_kit:5.2.4'
+    implementation 'cn.rongcloud.sdk:im_kit:5.40.1'
+    implementation 'cn.rongcloud.sdk.push:rong:5.40.1'
+    implementation 'cn.rongcloud.sdk.push:oppo:5.40.1'
+    implementation 'cn.rongcloud.sdk.push:vivo:5.40.1'
+    implementation 'cn.rongcloud.sdk.push:xiaomi:5.40.1'
 
     //日志展示
-    debugImplementation 'com.github.getActivity:Logcat:10.6'
+    debugImplementation 'com.github.getActivity:Logcat:12.5'
     implementation 'com.huawei.hms:push:6.5.0.300'
     implementation 'com.meizu.flyme.internet:push-internal:4.1.4@aar'
     //以下依赖都需要添加

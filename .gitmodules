@@ -1,0 +1,6 @@
+[submodule ".cursor/rules/android"]
+	path = .cursor/rules/android
+	url = git@gitlab2.rongcloud.net:ic/cursor_rules/cursor_rules_android.git
+[submodule ".cursor/rules/docs"]
+	path = .cursor/rules/docs
+	url = git@gitlab2.rongcloud.net:ic/cursor_rules/cursor_rules_docs.git

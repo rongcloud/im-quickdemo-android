@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        maven {url "https://maven.rongcloud.cn/repository/maven-releases/"}
+        mavenCentral()
+        google()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        maven {url "https://maven.rongcloud.cn/repository/maven-releases/"}
+        mavenCentral()
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://developer.huawei.com/repo/'
+        }
+    }
+}
+
+rootProject.name = 'im-quickdemo-android'
+include ':app'

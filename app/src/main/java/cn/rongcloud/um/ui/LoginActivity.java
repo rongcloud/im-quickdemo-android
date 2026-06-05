@@ -33,6 +33,7 @@ import cn.rongcloud.um.net.HttpQUtils;
 import cn.rongcloud.um.utils.DataProcessorUtil;
 import cn.rongcloud.um.utils.SessionManager;
 
+import io.rong.common.rlog.RLog;
 import io.rong.imkit.GlideKitImageEngine;
 import io.rong.imkit.IMCenter;
 import io.rong.imkit.RongIM;
@@ -44,9 +45,12 @@ import io.rong.imkit.picture.tools.ToastUtils;
 import io.rong.imkit.userinfo.RongUserInfoManager;
 import io.rong.imkit.userinfo.model.GroupUserInfo;
 import io.rong.imkit.utils.RouteUtils;
+import io.rong.imlib.RongCoreClient;
 import io.rong.imlib.RongIMClient;
 import io.rong.imlib.chatroom.base.RongChatRoomClient;
 import io.rong.imlib.model.Conversation;
+import io.rong.imlib.model.Group;
+import io.rong.imlib.model.InitOption;
 import io.rong.imlib.model.MentionedInfo;
 import io.rong.imlib.model.Message;
 import io.rong.imlib.model.MessageContent;
@@ -64,6 +68,7 @@ public class LoginActivity extends BaseActivity<MainViewModel, ActivityLoginBind
     private final String TAG = LoginActivity.this.getClass().getName();
 
     private String appKeySp;
+    private String token;
 
     @Override
     public int getContentViewId() {
@@ -72,12 +77,11 @@ public class LoginActivity extends BaseActivity<MainViewModel, ActivityLoginBind
 
     @Override
     public void setView() {
-
         appKeySp = SessionManager.getInstance().getString(Constants.SP_KEY_APP_KEY);
-        String appSecretSp = SessionManager.getInstance().getString(Constants.SP_KEY_APP_SECRET);
-        String token = SessionManager.getInstance().getString(Constants.SP_KEY_APP_TOKEN);
+        token = SessionManager.getInstance().getString(Constants.SP_KEY_APP_TOKEN);
         if (!TextUtils.isEmpty(token)) {
             initRC(appKeySp);
+            Log.e("zr","token==="+token);
             connectIM(token);
             return;
         }
@@ -90,10 +94,10 @@ public class LoginActivity extends BaseActivity<MainViewModel, ActivityLoginBind
             mViewData.editAppkey.setText(appKeySp);
         }
 
-        if (TextUtils.isEmpty(appSecretSp)) {
-            mViewData.editSecret.setText(Constants.SECRET);
+        if (TextUtils.isEmpty(token)) {
+            mViewData.editToken.setText(Constants.TOKEN);
         } else {
-            mViewData.editSecret.setText(appSecretSp);
+            mViewData.editToken.setText(token);
         }
 
         mViewData.editUserid.setText(Constants.USER_ID);
@@ -106,27 +110,38 @@ public class LoginActivity extends BaseActivity<MainViewModel, ActivityLoginBind
     }
 
 
+//  注释用融云 secret 获取用户 token 的逻辑，防止 secret 被暴露
     private void initListener() {
         mViewData.topBar.setOnRightIconClickListener(view -> goActivity(SettingActivity.class));
         // 登录
         mViewData.button.setOnClickListener(v -> {
             String appKey = mViewData.editAppkey.getText().toString();
+            String token = mViewData.editToken.getText().toString();
             if (TextUtils.isEmpty(appKeySp) || !appKeySp.equals(appKey) || !IMCenter.getInstance().isInitialized()) {
                 initRC(appKey);
+                Log.e("zr","token---"+token);
+                SessionManager.getInstance().put(Constants.SP_KEY_APP_KEY, appKey);
+                connectIM(token);
             }
-            getToken();
+
         });
     }
 
     private void initRC(String appKey) {
+
+        InitOption initOption = new InitOption.Builder().build();
         if (IMCenter.getInstance().isInitialized()) {
             RongIM.getInstance().disconnect();
             // 初始化融云SDK
-            RongIMClient.init(getApplication(), appKey);
-            RongExtensionManager.init(getApplication(), appKey);
+
+            IMCenter.init(getApplication(), appKey, initOption);
+            RongExtensionManager.getInstance().init(getApplication(), appKey);
         } else {
-            RongIM.init(getApplication(), appKey);
+            IMCenter.init(getApplication(), appKey, initOption);
         }
+
+//        初始化之后打开融云日志打印
+        RongCoreClient.getInstance().setRLogLevel(RLog.V);
 
         // 在打开会话列表页面之前，调用设置自定义的数据处理器
         DataProcessorUtil.conversationTypes = DataProcessorUtil.supportedTypes();
@@ -147,44 +162,45 @@ public class LoginActivity extends BaseActivity<MainViewModel, ActivityLoginBind
     }
 
     /**
-     * 获取token
+     * 注释根据 Secret 获取 token 的操作，防止 Secret 泄漏
      */
-    private void getToken() {
-        HttpQUtils.getToken(mViewData.editAppkey.getText().toString(), mViewData.editSecret.getText().toString(), mViewData.editUserid.getText().toString(),
-                new HttpQUtils.GetTokenCallback() {
-                    @Override
-                    public void onGetTokenSuccess(@NonNull String token) {
-
-                        String appKey = mViewData.editAppkey.getText().toString();
-                        String appSecret = mViewData.editSecret.getText().toString();
-                        if (TextUtils.isEmpty(appKeySp)) {
-                            SessionManager.getInstance().put(Constants.SP_KEY_APP_KEY, appKey);
-                            SessionManager.getInstance().put(Constants.SP_KEY_APP_SECRET, appSecret);
-                        } else {
-                            if (!appKeySp.equals(appKey)) {
-                                SessionManager.getInstance().put(Constants.SP_KEY_APP_KEY, appKey);
-                                SessionManager.getInstance().put(Constants.SP_KEY_APP_SECRET, appSecret);
-                            }
-                        }
-
-                        Log.i("token", token);
-                        connectIM(token);
-                    }
-
-                    @Override
-                    public void onGetTokenFailed(@NonNull String err) {
-                        Log.i("onGetTokenFailed", err);
-                    }
-
-                });
-    }
+//    private void getToken() {
+//        HttpQUtils.getToken(mViewData.editAppkey.getText().toString(), mViewData.editSecret.getText().toString(), mViewData.editUserid.getText().toString(),
+//                new HttpQUtils.GetTokenCallback() {
+//                    @Override
+//                    public void onGetTokenSuccess(@NonNull String token) {
+//
+//                        String appKey = mViewData.editAppkey.getText().toString();
+//                        String appSecret = mViewData.editSecret.getText().toString();
+//                        if (TextUtils.isEmpty(appKeySp)) {
+//                            SessionManager.getInstance().put(Constants.SP_KEY_APP_KEY, appKey);
+//                            SessionManager.getInstance().put(Constants.SP_KEY_APP_SECRET, appSecret);
+//                        } else {
+//                            if (!appKeySp.equals(appKey)) {
+//                                SessionManager.getInstance().put(Constants.SP_KEY_APP_KEY, appKey);
+//                                SessionManager.getInstance().put(Constants.SP_KEY_APP_SECRET, appSecret);
+//                            }
+//                        }
+//
+//                        Log.i("token", token);
+//
+//                    }
+//
+//                    @Override
+//                    public void onGetTokenFailed(@NonNull String err) {
+//                        Log.i("onGetTokenFailed", err);
+//                    }
+//
+//                });
+//    }
 
     private void connectIM(@NonNull String token) {
-        RongIM.connect(token, new RongIMClient.ConnectCallback() {
+        IMCenter.getInstance().connect(token, new RongIMClient.ConnectCallback() {
             @Override
             public void onSuccess(String t) {
                 Log.i("connect_success", t);
                 SessionManager.getInstance().put(Constants.SP_KEY_APP_TOKEN, token);
+
                 goActivity(MainActivity.class);
                 finish();
             }
@@ -283,8 +299,8 @@ public class LoginActivity extends BaseActivity<MainViewModel, ActivityLoginBind
         // 群聊用户信息提供者
         RongUserInfoManager.getInstance().setGroupInfoProvider(groupId -> {
             // 此处为异步请求群信息逻辑，需要开发者实现
-//                Group group = new Group(groupId, "group" + groupId, Uri.parse("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp5.itc.cn%2Fq_70%2Fimages03%2F20200816%2F074283744b4b46f3aaeb9d93d2d3fb5f.jpeg&refer=http%3A%2F%2Fp5.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657867592&t=6698d1d70ee8e953860728a71ff55d27"));
-//                RongUserInfoManager.getInstance().refreshGroupInfoCache(group);
+                Group group = new Group(groupId, "name" + groupId, Uri.parse("https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/c5590f863154474db0f23e089149d0d1.jpeg~tplv-a9rns2rl98-downsize_watermark_1_6_b.png?lk3s=8e244e95&rcl=202606041854004F0832CED6ACF43F7653&rrcfp=827586d3&x-expires=2095930453&x-signature=StdaONqjk1kikaroY%2BW9%2FX%2BdOk4%3D"));
+                RongUserInfoManager.getInstance().refreshGroupInfoCache(group);
             return null;
         }, true);
         // 设置群成员昵称

@@ -64,6 +64,16 @@ public class MyApplication extends Application {
             public void onThirdPartyPushState(PushType pushType, String action, long resultCode) {
 
             }
+
+            @Override
+            public void onTokenReceived(PushType pushType, String token) {
+
+            }
+
+            @Override
+            public void onTokenReportResult(PushType reportType, int code, PushType finalType, String finalToken) {
+
+            }
         });
     }
 
