@@ -1,5 +1,7 @@
 # 工程简介：im-quickdemo-android
 
+这是一个基于 融云（RongCloud）即时通讯 SDK 的 iOS IM 快速体验 Demo，用于演示融云 IM SDK 的核心能力。属于融云官方提供的开源示例工程。
+
 ## 1. Demo 类型
 
 这是一个基于 **融云（RongCloud）即时通讯 SDK** 的 **Android IM 快速体验 Demo**，用于演示融云 IM SDK 的核心能力。属于融云官方提供的开源示例工程。
