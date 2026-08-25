@@ -95,6 +95,18 @@
         <activity
             android:name=".ui.DoMainMessageActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.DoMainConversationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DoMainMessageTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DoMainMessageOperationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DoMainMessageHistoryActivity"
+            android:exported="false" />
 
 
 

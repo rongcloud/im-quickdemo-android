@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(jar tf:*)",
+      "Bash(grep -v '\\\\$')",
+      "Bash(unzip -q /Users/zhangrong/.gradle/caches/modules-2/files-2.1/cn.rongcloud.sdk/im_libcore/5.40.1/d32c72f4d9a2fbec5203af4cd8d4fd57b681beec/im_libcore-5.40.1.aar -d /tmp/im_libcore_540)",
+      "Bash(unzip -q /Users/zhangrong/.gradle/caches/modules-2/files-2.1/cn.rongcloud.sdk/im_location/5.40.1/eb55730e438f885bc497eaa15af1649b2b9a1f0a/im_location-5.40.1.aar -d /tmp/im_location_540)",
+      "Read(//private/tmp/im_libcore_540/**)",
+      "Bash(javap -public io/rong/imlib/RongCoreClient.class)"
+    ]
+  }
+}

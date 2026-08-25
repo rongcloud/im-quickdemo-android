@@ -112,11 +112,11 @@ dependencies {
     api "io.reactivex.rxjava3:rxjava:3.0.13"
     api 'io.reactivex.rxjava3:rxandroid:3.0.0'
 
-    implementation 'cn.rongcloud.sdk:im_kit:5.40.1'
-    implementation 'cn.rongcloud.sdk.push:rong:5.40.1'
-    implementation 'cn.rongcloud.sdk.push:oppo:5.40.1'
-    implementation 'cn.rongcloud.sdk.push:vivo:5.40.1'
-    implementation 'cn.rongcloud.sdk.push:xiaomi:5.40.1'
+    implementation 'cn.rongcloud.sdk:im_kit:5.44.1'
+    implementation 'cn.rongcloud.sdk.push:rong:5.44.1'
+    implementation 'cn.rongcloud.sdk.push:oppo:5.44.1'
+    implementation 'cn.rongcloud.sdk.push:vivo:5.44.1'
+    implementation 'cn.rongcloud.sdk.push:xiaomi:5.44.1'
 
     //日志展示
     debugImplementation 'com.github.getActivity:Logcat:12.5'

@@ -74,7 +74,6 @@ git clone https://github.com/rongcloud/im-quickdemo-android.git
 - **全局常量**：`Constants.java` — appKey/token/userId 等默认值
 
 ## 7. 备注
-
 - 运行前需要自行准备 appKey 和 token
 - 如需使用，需：
   1. 在 [融云开发者控制台](https://developer.rongcloud.cn/) 注册并创建应用，获取自己的 `appKey`

@@ -7,8 +7,12 @@ import cn.rongcloud.um.R;
 import cn.rongcloud.um.base.BaseFragment;
 import cn.rongcloud.um.databinding.FragmentDomainListBinding;
 import cn.rongcloud.um.ui.DoMainChatRoomActivity;
+import cn.rongcloud.um.ui.DoMainConversationActivity;
 import cn.rongcloud.um.ui.DoMainGroupActivity;
 import cn.rongcloud.um.ui.DoMainMessageActivity;
+import cn.rongcloud.um.ui.DoMainMessageHistoryActivity;
+import cn.rongcloud.um.ui.DoMainMessageOperationActivity;
+import cn.rongcloud.um.ui.DoMainMessageTypeActivity;
 import cn.rongcloud.um.ui.DoMainUltraGroupActivity;
 import cn.rongcloud.um.ui.MainViewModel;
 
@@ -22,7 +26,7 @@ public class DoMainListFragment extends BaseFragment<MainViewModel, FragmentDoma
     public void initView(@Nullable Bundle savedInstanceState) {
         mViewData.contentListview.setAdapter(new ArrayAdapter<String>(getActivity(),
                 R.layout.picklist_text,
-                new String[]{"消息", "群组", "聊天室", "超级群"}));
+                new String[]{"消息", "群组", "聊天室", "超级群", "会话管理", "消息类型", "消息操作", "消息接收与历史"}));
         initListener();
     }
 
@@ -40,6 +44,18 @@ public class DoMainListFragment extends BaseFragment<MainViewModel, FragmentDoma
                     break;
                 case 3:
                     goActivity(DoMainUltraGroupActivity.class);
+                    break;
+                case 4:
+                    goActivity(DoMainConversationActivity.class);
+                    break;
+                case 5:
+                    goActivity(DoMainMessageTypeActivity.class);
+                    break;
+                case 6:
+                    goActivity(DoMainMessageOperationActivity.class);
+                    break;
+                case 7:
+                    goActivity(DoMainMessageHistoryActivity.class);
                     break;
             }
         });
