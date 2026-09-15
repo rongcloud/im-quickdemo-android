@@ -38,6 +38,8 @@ public class DoMainMessageTypeActivity extends BaseActivity<MainViewModel, Activ
                         "发送短视频消息", "发送高清语音消息", "发送富文本消息",
                         "发送引用消息", "发送GIF消息"}));
         initListener();
+        int apiIndex = getIntent().getIntExtra("api_item_index", -1);
+        if (apiIndex >= 0) mViewData.contentListview.post(() -> mViewData.contentListview.performItemClick(mViewData.contentListview.getChildAt(apiIndex), apiIndex, apiIndex));
     }
 
     @Override

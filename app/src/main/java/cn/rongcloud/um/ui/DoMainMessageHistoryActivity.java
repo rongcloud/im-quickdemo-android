@@ -28,6 +28,8 @@ public class DoMainMessageHistoryActivity extends BaseActivity<MainViewModel, Ac
                         "按UID获取本地消息", "获取会话消息总数", "获取未读@消息列表",
                         "设置指定时间前已读"}));
         initListener();
+        int apiIndex = getIntent().getIntExtra("api_item_index", -1);
+        if (apiIndex >= 0) mViewData.contentListview.post(() -> mViewData.contentListview.performItemClick(mViewData.contentListview.getChildAt(apiIndex), apiIndex, apiIndex));
     }
 
     @Override

@@ -37,15 +37,6 @@
             android:name=".ui.LanguageSettingActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.DoMainUltraGroupActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.DoMainChatRoomActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.DoMainGroupActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
@@ -93,9 +84,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.DoMainMessageActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.DoMainConversationActivity"
             android:exported="false" />
         <activity
@@ -106,6 +94,9 @@
             android:exported="false" />
         <activity
             android:name=".ui.DoMainMessageHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ApiDetailActivity"
             android:exported="false" />
 
 

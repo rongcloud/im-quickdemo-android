@@ -49,7 +49,7 @@
                 android:layout_weight="1"
                 app:tabIconNormal="@drawable/tab_contacts_nor"
                 app:tabIconSelected="@drawable/tab_contacts_sel"
-                app:tabText="功能清单"
+                app:tabText="IMLibCore"
                 app:tabTextColorNormal="#abadbb"
                 app:tabTextColorSelected="#0099ff"
                 app:tabTextSize="10sp" />

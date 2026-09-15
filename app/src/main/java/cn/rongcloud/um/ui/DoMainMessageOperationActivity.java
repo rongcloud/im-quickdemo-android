@@ -30,6 +30,8 @@ public class DoMainMessageOperationActivity extends BaseActivity<MainViewModel, 
                         "修改消息内容", "设置消息发送状态", "设置消息接收状态",
                         "本地插入消息"}));
         initListener();
+        int apiIndex = getIntent().getIntExtra("api_item_index", -1);
+        if (apiIndex >= 0) mViewData.contentListview.post(() -> mViewData.contentListview.performItemClick(mViewData.contentListview.getChildAt(apiIndex), apiIndex, apiIndex));
     }
 
     @Override

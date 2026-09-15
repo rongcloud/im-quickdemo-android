@@ -152,7 +152,7 @@ public class MainActivity extends BaseActivity<MainViewModel, ActivityMainBindin
                         mViewData.topBar.getIvRight().setVisibility(View.VISIBLE);
                         break;
                     case 1:
-                        mViewData.topBar.setCenterText("功能清单");
+                        mViewData.topBar.setCenterText("IMLibCore");
                         mViewData.topBar.getIvRight().setVisibility(View.GONE);
                         break;
                     case 2:
