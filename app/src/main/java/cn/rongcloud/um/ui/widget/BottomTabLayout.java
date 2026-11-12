@@ -97,7 +97,7 @@ public class BottomTabLayout extends LinearLayout {
     }
 
     public void selectItem(int position) {
-        if (position < getChildCount()) {
+        if (position >= 0 && position < getChildCount()) {
             View lastItem = getChildAt(lastSelectedItemPos);
             //让上一个被选中的tab恢复原来状态
             changeItemSelectState(lastItem, false);
@@ -146,7 +146,7 @@ public class BottomTabLayout extends LinearLayout {
         SavedState ss = (SavedState) state;
         int pos = ss.pos;
         selectItem(pos);
-        super.onRestoreInstanceState(state);
+        super.onRestoreInstanceState(ss.getSuperState());
     }
 
     @Override
@@ -188,6 +188,7 @@ public class BottomTabLayout extends LinearLayout {
 
         public SavedState(Parcel source) {
             super(source);
+            pos = source.readInt();
         }
 
         @Override

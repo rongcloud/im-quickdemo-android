@@ -10,15 +10,11 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
     repositories {
+        // AndroidX, Data Binding and Material dependencies are published to Google Maven.
+        google()
         maven {url "https://maven.rongcloud.cn/repository/maven-releases/"}
         mavenCentral()
-        google()
-        jcenter()
         maven { url 'https://jitpack.io' }
-        maven {
-            allowInsecureProtocol = true
-            url 'http://developer.huawei.com/repo/'
-        }
     }
 }
 

@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">RcDemoIM</string>
     <string name="text_save">保存</string>
-    <string name="rc_login_text_login">登录</string>
     <string name="rc_setting_text">配置</string>
     <string name="rc_setting_text_navigation_file">配置导航和文件服务</string>
     <string name="rc_setting_text_navigation_file_title">导航和文件服务</string>

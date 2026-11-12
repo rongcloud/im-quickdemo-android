@@ -1,7 +1,7 @@
 package cn.rongcloud.um.ui;
 
 import android.text.TextUtils;
-import android.view.View;
+import android.os.Bundle;
 
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -12,15 +12,18 @@ import cn.rongcloud.um.R;
 import cn.rongcloud.um.base.BaseActivity;
 import cn.rongcloud.um.databinding.RcActivityMyConversationBinding;
 import cn.rongcloud.um.ui.fragment.MyConversationFragment;
-import io.rong.imkit.IMCenter;
 import io.rong.imkit.utils.RouteUtils;
-import io.rong.imlib.RongIMClient;
 import io.rong.imlib.model.Conversation;
 
-public class MyConversationActivity extends BaseActivity<MainViewModel, RcActivityMyConversationBinding> {
+public class MyConversationActivity extends BaseActivity<RcActivityMyConversationBinding> {
     protected String mTargetId;
     protected Conversation.ConversationType mConversationType;
     private MyConversationFragment conversationFragment;
+
+    @Override protected void onCreate(Bundle state) {
+        getTheme().applyStyle(io.rong.imkit.R.style.RCTraditionLightTheme, true);
+        super.onCreate(state);
+    }
 
     @Override
     public int getContentViewId() {
@@ -51,8 +54,4 @@ public class MyConversationActivity extends BaseActivity<MainViewModel, RcActivi
     }
 
 
-    @Override
-    public void setData() {
-
-    }
 }

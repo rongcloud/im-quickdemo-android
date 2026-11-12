@@ -6,7 +6,7 @@ import cn.rongcloud.um.R;
 import cn.rongcloud.um.base.BaseActivity;
 import cn.rongcloud.um.databinding.ActivitySettingBinding;
 
-public class SettingActivity extends BaseActivity<MainViewModel, ActivitySettingBinding> implements View.OnClickListener {
+public class SettingActivity extends BaseActivity<ActivitySettingBinding> implements View.OnClickListener {
     @Override
     public int getContentViewId() {
         return R.layout.activity_setting;
@@ -22,10 +22,6 @@ public class SettingActivity extends BaseActivity<MainViewModel, ActivitySetting
         mViewData.tvConversationlistParameter.setOnClickListener(this);
     }
 
-    @Override
-    public void setData() {
-
-    }
 
     @Override
     public void onClick(View view) {

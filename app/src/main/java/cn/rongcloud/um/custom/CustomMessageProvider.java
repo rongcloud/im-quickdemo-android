@@ -38,7 +38,8 @@ public class CustomMessageProvider extends BaseMessageItemProvider<CustomMessage
         TextView tvExpansion = viewHolder.getView(R.id.tv_expansion);
         Glide.with(ivImage).load(customMessage.getUrlImage()).into(ivImage);
         tvName.setText("姓名：" + customMessage.getContent());
-        tvExpansion.setText("点击消息可更新扩展: " + uiMessage.getExpansion().get("key1"));
+        String value = uiMessage.getExpansion() == null ? null : uiMessage.getExpansion().get("key1");
+        tvExpansion.setText("点击消息可更新扩展: " + (value == null ? "未设置" : value));
     }
 
     @Override

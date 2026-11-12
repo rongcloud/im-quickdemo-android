@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -16,7 +15,6 @@ import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 import androidx.core.view.ViewCompat;
 
 import cn.rongcloud.um.R;
@@ -31,18 +29,8 @@ public class TopBar extends Toolbar {
     private final ImageView ivRight, iv_right_add;
     private final View divider;
 
-    public RelativeLayout getMainView() {
-        return mainView;
-    }
-
     private final RelativeLayout mainView;
 
-
-    public ImageView getIvFinish() {
-        return ivFinish;
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.N)
     public TopBar(@NonNull final Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         LayoutInflater.from(context).inflate(R.layout.top_bar_layout, this);
@@ -117,32 +105,21 @@ public class TopBar extends Toolbar {
         int color = typedArray.getColor(R.styleable.TopBar_right_textColor, getResources().getColor(R.color.color_3));
         tvRight.setTextColor(color);
 
-
         typedArray.recycle();
 
         TypedArray array = context.obtainStyledAttributes(new int[]{R.attr.topbar_background, android.R.attr.homeAsUpIndicator});
         int backgroundColor = array.getColor(0, context.getResources().getColor(R.color.topbar_background_color));
-        Drawable homeAsUpIndicator = array.getDrawable(1);
         array.recycle();
-//        ivFinish.setImageDrawable(homeAsUpIndicator);
         setBackgroundColor(backgroundColor);
 
         ViewCompat.setElevation(this, 0);
         setElevation(0);//设置阴影效果,不设为0会有下划线
         setContentInsetsAbsolute(0, 0);
-        setTitleMargin(0, 0, 0, 0);
-//        setPadding(0, getStatusBarHeight(), 0, 0);
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            setTitleMargin(0, 0, 0, 0);
+        }
         setMinimumHeight(0);
         setMinimumWidth(0);
-    }
-
-    public int getStatusBarHeight() {
-        int result = 0;
-        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
-        if (resourceId > 0) {
-            result = getResources().getDimensionPixelSize(resourceId);
-        }
-        return result;
     }
 
     @Override
@@ -157,63 +134,34 @@ public class TopBar extends Toolbar {
 
     @Override
     public void setSubtitle(int resId) {
-//        super.setSubtitle(resId);
     }
 
     @Override
     public void setSubtitle(CharSequence subtitle) {
-//        super.setSubtitle(subtitle);
     }
 
     @Override
     public void setLogo(int resId) {
-//        super.setLogo(resId);
     }
 
     @Override
     public void setLogo(Drawable drawable) {
-//        super.setLogo(drawable);
     }
 
     @Override
     public void setNavigationIcon(int resId) {
-//        super.setNavigationIcon(resId);
     }
 
     @Override
     public void setNavigationIcon(@Nullable Drawable icon) {
-//        super.setNavigationIcon(icon);
     }
 
     @Override
     public void setContentInsetStartWithNavigation(int insetStartWithNavigation) {
-//        super.setContentInsetStartWithNavigation(insetStartWithNavigation);
-    }
-
-    public TextView getTvCenter() {
-        return tvCenter;
     }
 
     public ImageView getIvRight() {
         return ivRight;
-    }
-
-    public TextView getTvRight() {
-        return tvRight;
-    }
-
-    public void setRighIconVisible(boolean visible) {
-        ivRight.setVisibility(visible ? VISIBLE : GONE);
-    }
-
-    public void setRightIcon(int imgRes) {
-        ivRight.setVisibility(View.VISIBLE);
-        ivRight.setImageResource(imgRes);
-    }
-
-    public void setRightText(String text) {
-        tvRight.setText(text);
-        tvRight.setEnabled(!TextUtils.isEmpty(text));
     }
 
     public void setOnRightIconClickListener(OnClickListener listener) {
@@ -232,15 +180,4 @@ public class TopBar extends Toolbar {
         ivFinish.setOnClickListener(listener);
     }
 
-    public void setRightAddImageListener(OnClickListener listener) {
-        iv_right_add.setOnClickListener(listener);
-    }
-
-    public void setOnCenterTextClick(OnClickListener listener) {
-        tvCenter.setOnClickListener(listener);
-    }
-
-    public void showDivider() {
-        divider.setVisibility(View.VISIBLE);
-    }
 }

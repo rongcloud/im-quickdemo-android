@@ -1,20 +1,10 @@
 plugins {
     id 'com.android.application'
-    id 'com.huawei.agconnect'
-}
-
-configurations.configureEach {
-    resolutionStrategy {
-        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
-        force 'org.jetbrains.kotlin:kotlin-stdlib-common:1.8.22'
-        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22'
-        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
-    }
 }
 
 android {
     namespace "cn.rongcloud.um"
-    compileSdk 34
+    compileSdk 36
 
     defaultConfig {
         applicationId "cn.rongcloud.um"
@@ -22,23 +12,6 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        manifestPlaceholders = [
-                //启用 rongpush，如不需要 RongPush 也可以禁用
-                RONG_PUSH_ENABLE : "true",
-                XIAOMI_APP_ID  : "\"9882303761517473625\"",
-                XIAOMI_APP_KEY : "\"9451747338625\"",
-                HW_PUSH_ENABLE : "true",
-                HONOR_APP_ID  : "xxxxxxxxxx",
-                MEIZU_APP_ID : "xxxxxxxx",
-                MEIZU_APP_KEY: "xxxxxxxx",
-                OPPO_APP_KEY   : "xxxxxxxx",
-                OPPO_APP_SECRET: "xxxxxxxx",
-                VIVO_APP_ID : "105504865",
-                VIVO_APP_KEY: "4d406f5435042a5002acbaa7ac26e4a2"
-
-        ]
     }
 
 
@@ -88,42 +61,10 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
-    implementation 'androidx.appcompat:appcompat:1.3.0'
-    implementation 'com.google.android.material:material:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.appcompat:appcompat:1.8.0'
+    implementation 'com.google.android.material:material:1.14.0'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-
-    api(platform("com.squareup.okhttp3:okhttp-bom:4.9.1"))
-
-    // define any required OkHttp artifacts without version
-    api("com.squareup.okhttp3:okhttp")
-    api("com.squareup.okhttp3:logging-interceptor")
-
-    //retrofit网络请求框架
-    api 'com.squareup.retrofit2:retrofit:2.9.0'
-    //retrofit添加Json解析返回数据
-    api 'com.squareup.retrofit2:converter-scalars:2.9.0'
-    api 'com.squareup.retrofit2:converter-gson:2.9.0'
-    //retrofit添加RxJava支持
-    api 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
-
-    api "io.reactivex.rxjava3:rxjava:3.0.13"
-    api 'io.reactivex.rxjava3:rxandroid:3.0.0'
-
-    implementation 'cn.rongcloud.sdk:im_kit:5.44.1'
-    implementation 'cn.rongcloud.sdk.push:rong:5.44.1'
-    implementation 'cn.rongcloud.sdk.push:oppo:5.44.1'
-    implementation 'cn.rongcloud.sdk.push:vivo:5.44.1'
-    implementation 'cn.rongcloud.sdk.push:xiaomi:5.44.1'
-
-    //日志展示
-    debugImplementation 'com.github.getActivity:Logcat:12.5'
-    implementation 'com.huawei.hms:push:6.5.0.300'
-    implementation 'com.meizu.flyme.internet:push-internal:4.1.4@aar'
-    //以下依赖都需要添加
-    implementation 'com.google.code.gson:gson:2.6.2'
-    implementation 'commons-codec:commons-codec:1.6'
-    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'cn.rongcloud.sdk:im_lib:5.48.0'
+    implementation 'cn.rongcloud.sdk:im_kit:5.48.0'
+    implementation 'androidx.annotation:annotation:1.11.0'
 }

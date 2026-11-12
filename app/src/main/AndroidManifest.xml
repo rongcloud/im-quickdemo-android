@@ -31,9 +31,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RcDemoIM">
         <activity
-            android:name=".ui.MyMentionMemberSelectActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.LanguageSettingActivity"
             android:exported="false" />
         <activity
@@ -83,34 +80,10 @@
                     android:scheme="rong" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.DoMainConversationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.DoMainMessageTypeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.DoMainMessageOperationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.DoMainMessageHistoryActivity"
-            android:exported="false" />
+        <activity android:name=".ui.ImKitDetailActivity" android:exported="false" />
         <activity
             android:name=".ui.ApiDetailActivity"
             android:exported="false" />
-
-
-
-
-        <receiver
-            android:name=".custom.CustomPushMessageReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
-                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
-                <action android:name="io.rong.push.intent.THIRD_PARTY_PUSH_STATE" />
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>

@@ -7,7 +7,6 @@ public class SessionManager {
     private static final String SETTIING_OPTIONS = "SETTIING_OPTIONS";
     private static SharedPreferences sharedPreferences;
     private static SessionManager sessionManager;
-    public static final String ROOM_NUM = "room_id";
     private static Context mContext;
 
     public static void initContext(Context context) {
@@ -34,39 +33,11 @@ public class SessionManager {
         return value;
     }
 
-    public long put(String key, Long value) {
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putLong(key, value);
-        editor.commit();
-        return value;
-    }
-
-    public Float put(String key, Float value) {
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putFloat(key, value);
-        editor.commit();
-        return value;
-    }
-
     public int put(String key, int value) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putInt(key, value);
         editor.commit();
         return value;
-    }
-
-    public boolean put(String key, Boolean value) {
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putBoolean(key, value);
-        editor.commit();
-        return value;
-    }
-
-    public boolean contains(String key) {
-        if (null == sharedPreferences) {
-            return false;
-        }
-        return sharedPreferences.contains(key);
     }
 
     /**
@@ -84,22 +55,6 @@ public class SessionManager {
         return sharedPreferences.getString(key, "");
     }
 
-    public String getString(String key, String defVal) {
-        return sharedPreferences.getString(key, defVal);
-    }
-
-    public Boolean getBoolean(String key) {
-        return sharedPreferences.getBoolean(key, false);
-    }
-
-    public boolean getBoolean(String key, boolean defaultVal) {
-        return sharedPreferences.getBoolean(key, defaultVal);
-    }
-
-    public Long getLong(String key) {
-        return sharedPreferences.getLong(key, 0);
-    }
-
     public int getInt(String key) {
         return sharedPreferences.getInt(key, 0);
     }
@@ -108,7 +63,4 @@ public class SessionManager {
         return sharedPreferences.getInt(key, defValue);
     }
 
-    public float getFloat(String key, float defValue) {
-        return sharedPreferences.getFloat(key, defValue);
-    }
 }

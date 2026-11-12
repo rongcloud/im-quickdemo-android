@@ -4,33 +4,27 @@ package cn.rongcloud.um.base;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Looper;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import androidx.lifecycle.ViewModelProvider;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 
 import io.rong.imkit.picture.tools.ToastUtils;
 
 /**
  * Activity基类
  *
- * @param <Vm>  数据控制
  * @param <Vdb> Ui控制
  */
-public abstract class BaseActivity<Vm extends BaseViewModel, Vdb extends ViewDataBinding> extends AppCompatActivity {
+public abstract class BaseActivity<Vdb extends ViewDataBinding> extends AppCompatActivity {
     public abstract int getContentViewId();
 
     public abstract void setView();//设置UI相关
 
-    public abstract void setData();//设置数据相关
+    public void setData() { }
 
-    public Vm mViewModel;
     public Vdb mViewData;
 
     @Override
@@ -40,42 +34,31 @@ public abstract class BaseActivity<Vm extends BaseViewModel, Vdb extends ViewDat
                 finish();
                 return;
         }
-        setContentView(getContentViewId());
         mViewData = DataBindingUtil.setContentView(this, getContentViewId());
         mViewData.setLifecycleOwner(this);
 
-        createViewModel();
         this.setView();
         this.setData();
+        cn.rongcloud.um.ui.widget.SystemBars.apply(this, systemBarSurfaceColor());
     }
 
-    @SuppressWarnings("unchecked")
-    public void createViewModel() {
-        if (mViewModel == null) {
-            Class<BaseViewModel> modelClass;
-            Type type = getClass().getGenericSuperclass();
-            if (type instanceof ParameterizedType) {
-                modelClass = (Class<BaseViewModel>) ((ParameterizedType) type).getActualTypeArguments()[0];
-            } else {
-                modelClass = BaseViewModel.class;
-            }
-
-            mViewModel = (Vm) new ViewModelProvider(this).get(modelClass);
-
-        }
-    }
+    protected int systemBarSurfaceColor() { return android.graphics.Color.WHITE; }
 
     protected void goActivity(Class<? extends Activity> clazz) {
         startActivity(new Intent(this, clazz));
     }
 
     protected void toast(String msg) {
-        try {
-            ToastUtils.s(this, msg);
-        } catch (Exception e) {
-            Looper.prepare();
-            ToastUtils.s(this, msg);
-            Looper.loop();
+        runOnUiThread(() -> {
+            if (!isFinishing() && !isDestroyed()) ToastUtils.s(this, msg);
+        });
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (mViewData != null) {
+            mViewData.unbind();
         }
+        super.onDestroy();
     }
 }

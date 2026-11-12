@@ -1,387 +1,99 @@
 package cn.rongcloud.um.ui;
 
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Looper;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageView;
-
-import androidx.annotation.NonNull;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.bitmap.CircleCrop;
-import com.bumptech.glide.request.RequestOptions;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import cn.rongcloud.um.R;
+import cn.rongcloud.um.auth.LoginController;
+import cn.rongcloud.um.auth.LoginSession;
+import cn.rongcloud.um.auth.RongLoginClient;
 import cn.rongcloud.um.base.BaseActivity;
-import cn.rongcloud.um.base.Constants;
 import cn.rongcloud.um.base.MyApplication;
-import cn.rongcloud.um.bean.GroupMemberInfo;
-import cn.rongcloud.um.custom.CustomMessage;
-import cn.rongcloud.um.custom.CustomMessageProvider;
-import cn.rongcloud.um.custom.MyDataProcessor;
-import cn.rongcloud.um.custom.MyExtensionConfig;
+import cn.rongcloud.um.config.DemoConfig;
 import cn.rongcloud.um.databinding.ActivityLoginBinding;
-import cn.rongcloud.um.net.HttpQUtils;
-import cn.rongcloud.um.utils.DataProcessorUtil;
-import cn.rongcloud.um.utils.SessionManager;
-
-import io.rong.common.rlog.RLog;
-import io.rong.imkit.GlideKitImageEngine;
-import io.rong.imkit.IMCenter;
-import io.rong.imkit.RongIM;
-import io.rong.imkit.config.RongConfigCenter;
-import io.rong.imkit.conversation.extension.RongExtensionManager;
-import io.rong.imkit.feature.mention.IExtensionEventWatcher;
-import io.rong.imkit.feature.mention.RongMentionManager;
-import io.rong.imkit.picture.tools.ToastUtils;
-import io.rong.imkit.userinfo.RongUserInfoManager;
-import io.rong.imkit.userinfo.model.GroupUserInfo;
-import io.rong.imkit.utils.RouteUtils;
-import io.rong.imlib.RongCoreClient;
-import io.rong.imlib.RongIMClient;
-import io.rong.imlib.chatroom.base.RongChatRoomClient;
-import io.rong.imlib.model.Conversation;
-import io.rong.imlib.model.Group;
-import io.rong.imlib.model.InitOption;
-import io.rong.imlib.model.MentionedInfo;
-import io.rong.imlib.model.Message;
-import io.rong.imlib.model.MessageContent;
-import io.rong.imlib.model.UserInfo;
-import io.rong.push.PushEventListener;
-import io.rong.push.PushType;
-import io.rong.push.RongPushClient;
-import io.rong.push.notification.PushNotificationMessage;
-import io.rong.push.platform.PushAdapter;
 
 /**
  * 登录页
  */
-public class LoginActivity extends BaseActivity<MainViewModel, ActivityLoginBinding> {
-    private final String TAG = LoginActivity.this.getClass().getName();
+public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
+    private boolean connecting;
+    private LoginController controller;
 
-    private String appKeySp;
-    private String token;
+    @Override public int getContentViewId() { return R.layout.activity_login; }
 
-    @Override
-    public int getContentViewId() {
-        return R.layout.activity_login;
-    }
-
-    @Override
-    public void setView() {
-        appKeySp = SessionManager.getInstance().getString(Constants.SP_KEY_APP_KEY);
-        token = SessionManager.getInstance().getString(Constants.SP_KEY_APP_TOKEN);
-        if (!TextUtils.isEmpty(token)) {
-            initRC(appKeySp);
-            Log.e("zr","token==="+token);
-            connectIM(token);
-            return;
-        }
-
-        mViewData.imageLoad.setVisibility(View.GONE);
-
-        if (TextUtils.isEmpty(appKeySp)) {
-            mViewData.editAppkey.setText(Constants.APP_KEY);
-        } else {
-            mViewData.editAppkey.setText(appKeySp);
-        }
-
-        if (TextUtils.isEmpty(token)) {
-            mViewData.editToken.setText(Constants.TOKEN);
-        } else {
-            mViewData.editToken.setText(token);
-        }
-
-        mViewData.editUserid.setText(Constants.USER_ID);
-        initListener();
-    }
-
-    @Override
-    public void setData() {
-
-    }
-
-
-//  注释用融云 secret 获取用户 token 的逻辑，防止 secret 被暴露
-    private void initListener() {
-        mViewData.topBar.setOnRightIconClickListener(view -> goActivity(SettingActivity.class));
-        // 登录
-        mViewData.button.setOnClickListener(v -> {
-            String appKey = mViewData.editAppkey.getText().toString();
-            String token = mViewData.editToken.getText().toString();
-            if (TextUtils.isEmpty(appKeySp) || !appKeySp.equals(appKey) || !IMCenter.getInstance().isInitialized()) {
-                initRC(appKey);
-                Log.e("zr","token---"+token);
-                SessionManager.getInstance().put(Constants.SP_KEY_APP_KEY, appKey);
-                connectIM(token);
+    @Override public void setView() {
+        LoginSession session = MyApplication.loginSession();
+        android.os.Handler main = new android.os.Handler(android.os.Looper.getMainLooper());
+        controller = new LoginController(new RongLoginClient(getApplication()), session,
+                command -> main.post(command), new LoginController.View() {
+            @Override public void connecting(String userId) {
+                setConnecting(true);
+                showStatus(getString(R.string.login_connecting_user, userId), false);
             }
-
-        });
-    }
-
-    private void initRC(String appKey) {
-
-        InitOption initOption = new InitOption.Builder().build();
-        if (IMCenter.getInstance().isInitialized()) {
-            RongIM.getInstance().disconnect();
-            // 初始化融云SDK
-
-            IMCenter.init(getApplication(), appKey, initOption);
-            RongExtensionManager.getInstance().init(getApplication(), appKey);
-        } else {
-            IMCenter.init(getApplication(), appKey, initOption);
-        }
-
-//        初始化之后打开融云日志打印
-        RongCoreClient.getInstance().setRLogLevel(RLog.V);
-
-        // 在打开会话列表页面之前，调用设置自定义的数据处理器
-        DataProcessorUtil.conversationTypes = DataProcessorUtil.supportedTypes();
-        RongConfigCenter.conversationListConfig().setDataProcessor(new MyDataProcessor());
-        ArrayList<Class<? extends MessageContent>> myMessages = new ArrayList<>();
-        myMessages.add(CustomMessage.class);
-        RongIMClient.registerMessageType(myMessages);
-        RongConfigCenter.conversationConfig().addMessageProvider(new CustomMessageProvider());
-        RongExtensionManager.getInstance().setExtensionConfig(new MyExtensionConfig());
-        RouteUtils.registerActivity(RouteUtils.RongActivityType.ConversationListActivity, MainActivity.class);
-        RouteUtils.registerActivity(RouteUtils.RongActivityType.ConversationActivity, MyConversationActivity.class);
-        // 初始化用户和群组信息内容提供者
-        initInfoProvider();
-        sendAllPerson();
-        // 设置头像信息
-        initRongPortrait();
-
-    }
-
-    /**
-     * 注释根据 Secret 获取 token 的操作，防止 Secret 泄漏
-     */
-//    private void getToken() {
-//        HttpQUtils.getToken(mViewData.editAppkey.getText().toString(), mViewData.editSecret.getText().toString(), mViewData.editUserid.getText().toString(),
-//                new HttpQUtils.GetTokenCallback() {
-//                    @Override
-//                    public void onGetTokenSuccess(@NonNull String token) {
-//
-//                        String appKey = mViewData.editAppkey.getText().toString();
-//                        String appSecret = mViewData.editSecret.getText().toString();
-//                        if (TextUtils.isEmpty(appKeySp)) {
-//                            SessionManager.getInstance().put(Constants.SP_KEY_APP_KEY, appKey);
-//                            SessionManager.getInstance().put(Constants.SP_KEY_APP_SECRET, appSecret);
-//                        } else {
-//                            if (!appKeySp.equals(appKey)) {
-//                                SessionManager.getInstance().put(Constants.SP_KEY_APP_KEY, appKey);
-//                                SessionManager.getInstance().put(Constants.SP_KEY_APP_SECRET, appSecret);
-//                            }
-//                        }
-//
-//                        Log.i("token", token);
-//
-//                    }
-//
-//                    @Override
-//                    public void onGetTokenFailed(@NonNull String err) {
-//                        Log.i("onGetTokenFailed", err);
-//                    }
-//
-//                });
-//    }
-
-    private void connectIM(@NonNull String token) {
-        IMCenter.getInstance().connect(token, new RongIMClient.ConnectCallback() {
-            @Override
-            public void onSuccess(String t) {
-                Log.i("connect_success", t);
-                SessionManager.getInstance().put(Constants.SP_KEY_APP_TOKEN, token);
-
+            @Override public void failed(String message) {
+                setConnecting(false);
+                showStatus(message, true);
+            }
+            @Override public void signedIn() {
+                connecting = false;
                 goActivity(MainActivity.class);
                 finish();
             }
-
-            @Override
-            public void onError(RongIMClient.ConnectionErrorCode e) {
-                Log.i("connect_error", e.name());
-                if (e.equals(RongIMClient.ConnectionErrorCode.RC_CONNECTION_EXIST)) {
-                    //连接已存在 直接跳转到主页面
-                    goActivity(MainActivity.class);
-                    finish();
-                }
-
-            }
-
-            @Override
-            public void onDatabaseOpened(RongIMClient.DatabaseOpenStatus code) {
-                Log.i("connect_database", code.name());
-            }
         });
+        android.widget.ArrayAdapter<DemoConfig.User> adapter = new android.widget.ArrayAdapter<>(
+                this, R.layout.item_login_user, DemoConfig.USERS);
+        adapter.setDropDownViewResource(R.layout.item_login_user_dropdown);
+        mViewData.userSpinner.setAdapter(adapter);
+        String previous = session.lastUserId();
+        for (int i = 0; i < DemoConfig.USERS.size(); i++) {
+            if (DemoConfig.USERS.get(i) != null && DemoConfig.USERS.get(i).userId.equals(previous)) mViewData.userSpinner.setSelection(i);
+        }
+        mViewData.settingsButton.setOnClickListener(v -> goActivity(SettingActivity.class));
+        mViewData.loginButton.setOnClickListener(v -> login());
+        mViewData.userSpinner.setOnItemSelectedListener(new android.widget.AdapterView.OnItemSelectedListener() {
+            @Override public void onItemSelected(android.widget.AdapterView<?> parent, View view, int position, long id) {
+                showConfigurationState();
+            }
+            @Override public void onNothingSelected(android.widget.AdapterView<?> parent) { showConfigurationState(); }
+        });
+        showConfigurationState();
     }
 
-    private void sendAllPerson() {
-        RongExtensionManager.getInstance()
-                .addExtensionEventWatcher(
-                        new IExtensionEventWatcher() {
-                            @Override
-                            public void onTextChanged(
-                                    Context context,
-                                    Conversation.ConversationType type,
-                                    String targetId,
-                                    int cursorPos,
-                                    int count,
-                                    String text) {
-                            }
 
-                            @Override
-                            public void onSendToggleClick(Message message) {
-                                if (message != null
-                                        && message.getContent() != null
-                                        && message.getContent().getMentionedInfo() != null
-                                        && message.getContent()
-                                        .getMentionedInfo()
-                                        .getMentionedUserIdList()
-                                        != null
-                                        && message.getContent()
-                                        .getMentionedInfo()
-                                        .getMentionedUserIdList()
-                                        .size()
-                                        > 0
-                                        && message.getContent()
-                                        .getMentionedInfo()
-                                        .getMentionedUserIdList()
-                                        .get(0)
-                                        .equals(String.valueOf(-1))) {
-                                    message.getContent()
-                                            .getMentionedInfo()
-                                            .setType(MentionedInfo.MentionedType.ALL);
-                                }
-                            }
-
-                            @Override
-                            public void onDeleteClick(
-                                    Conversation.ConversationType type,
-                                    String targetId,
-                                    EditText editText,
-                                    int cursorPos) {
-                            }
-
-                            @Override
-                            public void onDestroy(
-                                    Conversation.ConversationType type, String targetId) {
-                            }
-                        });
+    private DemoConfig.User selectedUser() {
+        return (DemoConfig.User) mViewData.userSpinner.getSelectedItem();
     }
 
-    /**
-     * 设置保存用户头像等信息
-     */
-    public void initInfoProvider() {
-
-        // 单聊用户信息提供者
-        RongUserInfoManager.getInstance().setUserInfoProvider(s -> {
-            int num = Integer.parseInt(String.valueOf(s.hashCode()).substring((String.valueOf(s.hashCode())).length() - 1));
-            Log.e(TAG, "num: " + num);
-            // 此处应异步调用，从应用后台获取数据
-            UserInfo userInfo;
-            if (num < 10) {
-                userInfo = new UserInfo(s, "name" + s, Uri.parse(Constants.DefaultAvatar[num]));
-            } else {
-                userInfo = new UserInfo(s, "name" + s, null);
-            }
-            RongUserInfoManager.getInstance().refreshUserInfoCache(userInfo);
-            return null;
-        }, true);
-        // 群聊用户信息提供者
-        RongUserInfoManager.getInstance().setGroupInfoProvider(groupId -> {
-            // 此处为异步请求群信息逻辑，需要开发者实现
-                Group group = new Group(groupId, "name" + groupId, Uri.parse("https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/c5590f863154474db0f23e089149d0d1.jpeg~tplv-a9rns2rl98-downsize_watermark_1_6_b.png?lk3s=8e244e95&rcl=202606041854004F0832CED6ACF43F7653&rrcfp=827586d3&x-expires=2095930453&x-signature=StdaONqjk1kikaroY%2BW9%2FX%2BdOk4%3D"));
-                RongUserInfoManager.getInstance().refreshGroupInfoCache(group);
-            return null;
-        }, true);
-        // 设置群成员昵称
-        RongUserInfoManager.getInstance().setGroupUserInfoProvider((groupId, userId) -> {
-            //异步获取群昵称
-            GroupUserInfo groupUserInfo = new GroupUserInfo(groupId, userId, "nickname" + userId);
-            RongUserInfoManager.getInstance().refreshGroupUserInfoCache(groupUserInfo);
-            return null; //同步返回群成员昵称。
-        }, true);
-
-        // 设置群组成员信息
-        RongMentionManager.getInstance().setGroupMembersProvider((groupId, callback) -> {
-//            List<GroupMember> data = new ArrayList<>();
-//            GroupMember groupMember = new GroupMember(groupId, "-1", "所有人");
-
-//            data.add(groupMember);
-            HttpQUtils.queryGroup(groupId, new HttpQUtils.QueryGroupCallBack() {
-                @Override
-                public void onSuccess(List<GroupMemberInfo> groupMemberInfos) {
-                    List<UserInfo> userInfoList =
-                            new ArrayList<>();
-                    userInfoList.add(new UserInfo(
-                            "-1",
-                            "所有人",
-                            null));
-                    for (GroupMemberInfo groupMemberInfo : groupMemberInfos) {
-                        String name = RongUserInfoManager.getInstance().getGroupUserInfo(groupId, groupMemberInfo.getId()).getNickname();
-                        if (TextUtils.isEmpty(name)) {
-                            name = "name" + groupMemberInfo.getId();
-                        }
-
-                        UserInfo info =
-                                new UserInfo(
-                                        groupMemberInfo.getId(),
-                                        name,
-                                        null);
-                        userInfoList.add(info);
-                    }
-                    //此处为应用层获取群组成员逻辑
-                    callback.onGetGroupMembersResult(userInfoList); // 调用 callback 的 onGetGroupMembersResult 回传群组信息
-                }
-
-                @Override
-                public void onFailed(@NonNull String err) {
-                    Looper.prepare();
-                    toast("获取群成员列表 err : " + err);
-
-                    Looper.loop();
-                }
-            });
-
-        });
-//        UserInfo userInfo = new UserInfo("hao", "hao1", getMipMapToUri(R.mipmap.icon_plus));
-//        RongUserInfoManager.getInstance().refreshUserInfoCache(userInfo);
-        RongChatRoomClient.setChatRoomMemberListener((chatRoomMemberActions, roomId) -> {
-
-        });
+    @Override protected int systemBarSurfaceColor() {
+        return androidx.core.content.ContextCompat.getColor(this, R.color.login_background);
     }
 
-    /**
-     * 融云头像设置圆形
-     */
-    public void initRongPortrait() {
-        RongConfigCenter.featureConfig().setKitImageEngine(new GlideKitImageEngine() {
-            @Override
-            public void loadConversationPortrait(@NonNull Context context, @NonNull String url, @NonNull ImageView imageView, Message message) {
-                Glide.with(imageView).load(url)
+    private void showConfigurationState() {
+        if (connecting) return;
+        String error = DemoConfig.validationError(DemoConfig.APP_KEY, DemoConfig.USERS, selectedUser());
+        mViewData.loginButton.setEnabled(error == null);
+        showStatus(error == null ? getString(R.string.login_ready) : error, error != null);
+    }
 
-                        .apply(RequestOptions.bitmapTransform(new CircleCrop()))
+    private void showStatus(String text, boolean error) {
+        mViewData.loginStatus.setText(text);
+        mViewData.loginStatus.setTextColor(android.graphics.Color.parseColor(error ? "#B42318" : "#667085"));
+    }
 
-                        .into(imageView);
-            }
+    private void setConnecting(boolean value) {
+        connecting = value;
+        mViewData.userSpinner.setEnabled(!value);
+        mViewData.settingsButton.setEnabled(!value);
+        mViewData.loginButton.setEnabled(!value);
+        mViewData.loginButton.setText(value ? R.string.login_connecting : R.string.login_connect);
+        mViewData.loginProgress.setVisibility(value ? View.VISIBLE : View.GONE);
+    }
 
-            @Override
-            public void loadConversationListPortrait(@NonNull Context context, @NonNull String url, @NonNull ImageView imageView, Conversation conversation) {
-                Glide.with(imageView).load(url)
+    private void login() {
+        controller.login(DemoConfig.APP_KEY, DemoConfig.USERS, selectedUser());
+    }
 
-                        .apply(RequestOptions.bitmapTransform(new CircleCrop()))
-
-                        .into(imageView);
-            }
-        });
+    @Override protected void onDestroy() {
+        if (controller != null) controller.close();
+        super.onDestroy();
     }
 }

@@ -7,7 +7,6 @@ import io.rong.imkit.conversation.extension.component.plugin.IPluginModule;
 import io.rong.imlib.model.Conversation;
 
 public class MyExtensionConfig extends DefaultExtensionConfig {
-    private static final String TAG = MyExtensionConfig.class.getSimpleName();
 
     @Override
     public List<IPluginModule> getPluginModules(Conversation.ConversationType conversationType, String targetId) {

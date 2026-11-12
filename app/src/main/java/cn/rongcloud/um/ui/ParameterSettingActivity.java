@@ -7,7 +7,7 @@ import cn.rongcloud.um.utils.DataProcessorUtil;
 import cn.rongcloud.um.utils.SessionManager;
 import cn.rongcloud.um.base.Constants;
 
-public class ParameterSettingActivity extends BaseActivity<MainViewModel, ActivityParameterSettingBinding> {
+public class ParameterSettingActivity extends BaseActivity<ActivityParameterSettingBinding> {
 
 
     @Override

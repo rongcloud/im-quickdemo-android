@@ -18,7 +18,6 @@ import androidx.annotation.Nullable;
 import cn.rongcloud.um.R;
 
 public class BottomTabView extends RelativeLayout {
-    private static final String TAG = "BottomTabView";
     private Drawable drawableN;
     private Drawable drawableS;
     private ImageView tabIcon;

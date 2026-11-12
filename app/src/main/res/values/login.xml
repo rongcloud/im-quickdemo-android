@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_background">#F5F7FB</color>
+    <color name="login_primary">#305CDF</color>
+    <color name="login_ink">#172B4D</color>
+    <color name="login_secondary">#667085</color>
+    <string name="login_title">IM QuickDemo</string>
+    <string name="login_subtitle">连接用户，开始体验即时通信</string>
+    <string name="login_card_title">登录体验</string>
+    <string name="login_card_subtitle">选择一个已配置的用户</string>
+    <string name="login_user_label">User</string>
+    <string name="login_connect">连接并进入</string>
+    <string name="login_connecting">正在连接…</string>
+    <string name="login_connecting_user">正在连接用户 %1$s…</string>
+    <string name="login_ready">准备就绪，点击下方按钮连接</string>
+    <string name="login_settings">设置</string>
+    <string name="login_footer">融云 IM SDK · 接口与会话体验</string>
+    <string name="login_server_hint">海外数据中心或私有云，请先在设置中配置服务器地址</string>
+</resources>

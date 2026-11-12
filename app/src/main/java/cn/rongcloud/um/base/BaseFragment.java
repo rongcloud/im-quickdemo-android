@@ -12,16 +12,15 @@ import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 
 import io.rong.imkit.picture.tools.ToastUtils;
 
-public abstract class BaseFragment<Vm extends BaseViewModel, Vdb extends ViewDataBinding> extends Fragment implements DataBindingProvider {
-    public Vm mViewModel;
+public abstract class BaseFragment<Vdb extends ViewDataBinding> extends Fragment {
     public Vdb mViewData;
+
+    public abstract int getContentViewId();
+    public abstract void initView(@Nullable Bundle savedInstanceState);
 
     @Nullable
     @Override
@@ -33,25 +32,16 @@ public abstract class BaseFragment<Vm extends BaseViewModel, Vdb extends ViewDat
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mViewData.setLifecycleOwner(this);
-        createViewModel();
+        mViewData.setLifecycleOwner(getViewLifecycleOwner());
         initView(savedInstanceState);
     }
 
-    @SuppressWarnings("unchecked")
-    public void createViewModel() {
-        if (mViewModel == null) {
-            Class<BaseViewModel> modelClass;
-            Type type = getClass().getGenericSuperclass();
-            if (type instanceof ParameterizedType) {
-                modelClass = (Class<BaseViewModel>) ((ParameterizedType) type).getActualTypeArguments()[0];
-            } else {
-                modelClass = BaseViewModel.class;
-            }
-
-            mViewModel = (Vm) new ViewModelProvider(this).get(modelClass);
-
-        }
+    /** Dispatch only while the exact view binding that started the request is still alive. */
+    protected void withView(Vdb expected, Runnable action) {
+        if (expected == null) return;
+        new android.os.Handler(android.os.Looper.getMainLooper()).post(() -> {
+            if (isAdded() && mViewData == expected) action.run();
+        });
     }
 
     protected void goActivity(Class<? extends Activity> clazz) {
@@ -59,6 +49,19 @@ public abstract class BaseFragment<Vm extends BaseViewModel, Vdb extends ViewDat
     }
 
     protected void toast(String msg) {
-        ToastUtils.s(getActivity(), msg);
+        Activity activity = getActivity();
+        if (activity == null) return;
+        activity.runOnUiThread(() -> {
+            if (isAdded() && !activity.isFinishing() && !activity.isDestroyed()) ToastUtils.s(activity, msg);
+        });
+    }
+
+    @Override
+    public void onDestroyView() {
+        if (mViewData != null) {
+            mViewData.unbind();
+            mViewData = null;
+        }
+        super.onDestroyView();
     }
 }

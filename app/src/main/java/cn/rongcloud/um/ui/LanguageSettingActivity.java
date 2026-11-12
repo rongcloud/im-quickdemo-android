@@ -12,7 +12,7 @@ import cn.rongcloud.um.utils.SessionManager;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LanguageSettingActivity extends BaseActivity<MainViewModel, ActivityLanguageSettingBinding> {
+public class LanguageSettingActivity extends BaseActivity<ActivityLanguageSettingBinding> {
     private LanguageSettingAdapter languageSettingAdapter;
     private List<String> list = new ArrayList<>();
 

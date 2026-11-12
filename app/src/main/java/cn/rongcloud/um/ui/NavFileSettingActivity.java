@@ -8,7 +8,7 @@ import cn.rongcloud.um.base.Constants;
 import cn.rongcloud.um.databinding.ActivityNavFileSettingBinding;
 import cn.rongcloud.um.utils.SessionManager;
 
-public class NavFileSettingActivity extends BaseActivity<MainViewModel, ActivityNavFileSettingBinding> {
+public class NavFileSettingActivity extends BaseActivity<ActivityNavFileSettingBinding> {
 
     @Override
     public int getContentViewId() {
@@ -28,7 +28,7 @@ public class NavFileSettingActivity extends BaseActivity<MainViewModel, Activity
             if (!TextUtils.isEmpty(mViewData.inputTextFile.getEtContentText())) {
                 SessionManager.getInstance().put(Constants.SP_KEY_FILE_URL, mViewData.inputTextFile.getEtContentText());
             }
-            toast("点击保存");
+            toast("已保存；若 SDK 已初始化，请重启应用使服务器配置生效");
         });
     }
 

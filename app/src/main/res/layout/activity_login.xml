@@ -1,129 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <data>
-
-    </data>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/login_background" android:fillViewport="true">
         <LinearLayout
-            android:id="@+id/ll_content"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-            <cn.rongcloud.um.ui.widget.TopBar
-                android:id="@+id/top_bar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:centerText="@string/rc_login_text_login"
-                app:rightIcon="@drawable/setting" />
-
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/settings_button"
+                android:layout_width="wrap_content" android:layout_height="48dp"
+                android:layout_gravity="end" android:background="?attr/selectableItemBackground"
+                android:text="@string/login_settings" android:textColor="@color/login_secondary"
+                android:textSize="14sp" android:stateListAnimator="@null" />
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="56dp" android:layout_height="56dp"
+                    android:layout_marginEnd="12dp" android:importantForAccessibility="no"
+                    android:scaleType="fitCenter" android:src="@mipmap/seal_app_logo" />
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:gravity="center_vertical" android:includeFontPadding="false"
+                    android:text="@string/login_title" android:textColor="@color/login_ink"
+                    android:textSize="26sp" android:textStyle="bold" />
+            </LinearLayout>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/rc_margin_size_20"
-                android:text="海外数据中心或者私有云需要先点击右上角按\n钮配置导航和文件服务器地址" />
-
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:gravity="center" android:text="@string/login_subtitle"
+                android:textColor="@color/login_secondary" android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="32dp" android:background="@drawable/login_card"
+                android:orientation="vertical" android:padding="24dp">
+                <TextView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/login_card_title" android:textColor="@color/login_ink"
+                    android:textSize="22sp" android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:text="@string/login_card_subtitle"
+                    android:textColor="@color/login_secondary" android:textSize="14sp" />
+                <TextView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp" android:labelFor="@id/user_spinner"
+                    android:text="@string/login_user_label" android:textColor="@color/login_ink"
+                    android:textSize="14sp" android:textStyle="bold" />
+                <FrameLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:background="@drawable/login_field">
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/user_spinner"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:minHeight="56dp" android:background="@android:color/transparent"
+                        android:popupBackground="@android:color/white" android:spinnerMode="dropdown" />
+                    <ImageView
+                        android:layout_width="20dp" android:layout_height="20dp"
+                        android:layout_gravity="end|center_vertical" android:layout_marginEnd="16dp"
+                        android:importantForAccessibility="no" android:src="@drawable/ic_login_dropdown" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ProgressBar
+                        android:id="@+id/login_progress" style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="18dp" android:layout_height="18dp"
+                        android:layout_marginEnd="8dp" android:indeterminateTint="@color/login_primary"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/login_status"
+                        android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:minHeight="40dp" android:gravity="center_vertical" android:accessibilityLiveRegion="polite"
+                        android:textColor="@color/login_secondary" android:textSize="13sp" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login_button"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:minHeight="54dp" android:layout_marginTop="20dp"
+                    android:padding="12dp" android:background="@drawable/login_button"
+                    app:backgroundTint="@null" android:stateListAnimator="@null"
+                    android:text="@string/login_connect" android:textColor="@android:color/white"
+                    android:textSize="16sp" android:textStyle="bold" />
+            </LinearLayout>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/rc_margin_size_20"
-                android:text="请输入appKey、Secret和UserId" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="@dimen/rc_margin_size_20"
-                android:layout_marginTop="@dimen/rc_margin_size_20"
-                android:layout_marginEnd="@dimen/rc_margin_size_20"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="AppKey:" />
-
-                <EditText
-                    android:id="@+id/edit_appkey"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/edit_bg"
-                    android:paddingStart="5dp"
-                    tools:ignore="RtlSymmetry" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="@dimen/rc_margin_size_20"
-                android:layout_marginEnd="@dimen/rc_margin_size_20"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="token:  " />
-
-                <EditText
-                    android:id="@+id/edit_token"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/edit_bg"
-                    android:paddingStart="5dp"
-                    tools:ignore="RtlSymmetry" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="@dimen/rc_margin_size_20"
-                android:layout_marginEnd="@dimen/rc_margin_size_20"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="UserId:  " />
-
-                <EditText
-                    android:id="@+id/edit_userid"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/edit_bg"
-                    android:paddingStart="5dp" />
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:text="登录" />
-
-
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:gravity="center"
+                android:text="@string/login_server_hint" android:textColor="@color/login_secondary"
+                android:textSize="12sp" android:lineSpacingExtra="4dp" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="32dp" android:gravity="center"
+                android:text="@string/login_footer" android:textColor="@color/login_secondary" android:textSize="12sp" />
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/image_load"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            android:src="@mipmap/seal_ic_splash" />
-    </RelativeLayout>
-
+    </ScrollView>
 </layout>

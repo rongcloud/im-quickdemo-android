@@ -1,6 +1,5 @@
 package cn.rongcloud.um.custom;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;

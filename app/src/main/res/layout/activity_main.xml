@@ -13,10 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:hideBack="true"
-            app:centerText="会话列表"
-            app:rightIcon="@drawable/icon_main_more"/>
+            app:centerText="会话列表"/>
 
-        <cn.rongcloud.um.ui.widget.NoScrollViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -52,6 +51,13 @@
                 app:tabText="IMLibCore"
                 app:tabTextColorNormal="#abadbb"
                 app:tabTextColorSelected="#0099ff"
+                app:tabTextSize="10sp" />
+
+            <cn.rongcloud.um.ui.widget.BottomTabView
+                android:id="@+id/btv_imkit"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                app:tabIconNormal="@drawable/tab_imkit_nor" app:tabIconSelected="@drawable/tab_imkit_sel"
+                app:tabText="IMKit" app:tabTextColorNormal="#abadbb" app:tabTextColorSelected="#0099ff"
                 app:tabTextSize="10sp" />
 
             <cn.rongcloud.um.ui.widget.BottomTabView

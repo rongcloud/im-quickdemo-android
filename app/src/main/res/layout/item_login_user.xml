@@ -1,0 +1,6 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:minHeight="56dp" android:gravity="center_vertical"
+    android:paddingStart="16dp" android:paddingEnd="48dp"
+    android:maxLines="1" android:ellipsize="end" 
+    android:textColor="@color/login_ink" android:textSize="16sp" />
