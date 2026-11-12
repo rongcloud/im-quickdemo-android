@@ -15,12 +15,12 @@ import java.util.Set;
 public final class DemoConfig {
     private DemoConfig() { }
 
-    public static final String APP_KEY = "8luwapkv86del";
+    public static final String APP_KEY = "";
 
     // new User("用户 ID", "该用户的 Token")；增删行即可更新登录下拉框。
     public static final List<User> USERS = Collections.unmodifiableList(Arrays.asList(
-            new User("user1", "yGITX1Lxge0scjJSxkJVceF8Y1wue5CL05vI3ogZSGg=@9tsf.cn.rongnav.com;9tsf.cn.rongcfg.com"),
-            new User("user2", "")
+            new User("", ""),
+            new User("", "")
     ));
 
     public static final class User {
