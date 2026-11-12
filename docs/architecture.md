@@ -60,7 +60,7 @@ RongCoreClient / ChannelClient
 
 ## 登录与 SDK 生命周期
 
-- `MyApplication` 是组合入口：创建 `LoginSession`，清理旧版持久化凭据，并保留推送配置。
+- `MyApplication` 是组合入口：创建 `LoginSession`，清理旧版持久化凭据。
 - `SdkInitializer` 在首次登录时读取服务器设置、初始化 SDK、注册自定义消息和路由。进程内成功初始化后不重复注册；不持有 Activity。修改 AppKey 或已初始化的服务器设置后须重启应用。
 - `LoginActivity` 只负责 User 下拉、按钮与状态展示；`LoginController` 管理校验、重复点击、连接、错误与请求编号，`RongLoginClient` 适配 SDK。
 - SDK 回调投递到主线程后检查请求编号及关闭状态，旧请求不能覆盖重试结果。页面销毁关闭控制器并释放 View，正在连接时断开；成功进入首页后不主动断开。
@@ -69,7 +69,7 @@ RongCoreClient / ChannelClient
 
 ## 冗余清理
 
-基础 Activity/Fragment 仅管理 DataBinding、导航和视图生命周期，移除无状态的 MainViewModel/BaseViewModel 及反射创建逻辑。会话列表直接使用 SDK ConversationListFragment；主页面直接使用 AndroidX ViewPager，保持原有左右滑动行为。删除未引用的旧登录素材、模板启动图标、标题布局及模板测试；保留功能回归测试、SDK 消息注册类和 Manifest 推送入口。
+基础 Activity/Fragment 仅管理 DataBinding、导航和视图生命周期，移除无状态的 MainViewModel/BaseViewModel 及反射创建逻辑。会话列表直接使用 SDK ConversationListFragment；主页面直接使用 AndroidX ViewPager，保持原有左右滑动行为。删除未引用的旧登录素材、模板启动图标、标题布局及模板测试；保留功能回归测试和 SDK 消息注册类。
 
 ## IMKit 场景目录
 
@@ -90,3 +90,5 @@ RongCoreClient / ChannelClient
 ### 会话消息搜索
 
 `MessageSearchActions` 将 5 个入口映射到 RongCoreClient 的会话搜索、三种消息搜索重载及 SearchMessageParams 组合搜索。指定消息类型的重载使用 ConversationIdentifier；组合搜索构造可选 TimeRange、ConversationFilter、MessageFilter，ExResultCallback 同时输出 messages 与 matchCount。ApiRequest 校验时间顺序、排序枚举、过滤列表及分页边界。
+
+厂商推送权限已移除。“我的”页保留全局免打扰、推送内容预览和语言选项；会话免打扰和发送消息中的 SDK 参数继续用于接口演示。

@@ -17,7 +17,7 @@
 - **会话列表**：复用 IMKit 会话和聊天界面，支持自定义消息与插件。
 - **IMLibCore**：79 个演示入口，按八个功能组组织；二级列表进入独立接口页面。
 - **IMKit**：独立折叠目录，展示会话列表与聊天、用户/群组资料、自定义消息与交互，共 9 个场景。
-- **我的**：账号信息、全局免打扰、推送内容预览、推送语言选择与退出登录。语言选择当前保存为本地配置。
+- **我的**：账号信息、全局免打扰、推送内容预览、推送语言选择与退出登录。页面选项保留；当前未接入离线推送组件，语言选择仅保存为本地配置。
 
 | 接口分组 | 示例能力 |
 | --- | --- |
@@ -42,12 +42,13 @@
 | Gradle JDK | 17 |
 | Gradle Wrapper | 9.4.1，见 [gradle-wrapper.properties](gradle/wrapper/gradle-wrapper.properties) |
 | Android Gradle Plugin（AGP） | 9.2.0，见 [build.gradle](build.gradle) |
-| 华为 AG Connect 插件 | 1.9.5.301 |
 | minSdk / compileSdk / targetSdk | 23 / 36 / 34 |
 | Java 源码 / 字节码版本 | Java 8 |
-| 融云 IMKit / 融云推送组件 | 5.48.0，见 [app/build.gradle](app/build.gradle) |
+| 融云 IMLib / IMKit | 5.48.0，见 [app/build.gradle](app/build.gradle) |
 
 用 Android Studio 打开工程根目录，在 SDK Manager 中安装 **Android SDK Platform 36**，将 Gradle JDK 设置为 JDK 17，然后执行 Gradle Sync。命令行构建时也应将 `JAVA_HOME` 指向 JDK 17；源码的 Java 8 编译设置与运行 Gradle 的 JDK 版本相互独立。
+
+当前工程已移除融云及厂商推送组件依赖、厂商参数配置和华为 AG Connect 插件，不提供离线推送接入示例，也无需配置 `agconnect-services.json`。如需离线推送，请按[融云 Android 文档](https://docs.rongcloud.cn/android-imlib/)另行接入。
 
 统一使用工程自带的 `./gradlew`，无需单独安装 Gradle。Wrapper 当前从华为云镜像下载 Gradle 9.4.1；首次同步需要联网下载构建工具与依赖。
 
@@ -127,7 +128,6 @@ IMKit 注册集中在 [ImKitDemoSetup](app/src/main/java/cn/rongcloud/um/sdk/ImK
 ## 可选配置
 
 - **会话列表参数**：在设置页选择显示与聚合的类型。默认显示单聊、群聊和系统会话，聚合系统会话；这是本地列表配置，与接口演示页的 `conversationType` 入参独立。
-- **推送**：按需配置 [MyApplication.java](app/src/main/java/cn/rongcloud/um/base/MyApplication.java)、[app/build.gradle](app/build.gradle) 中的厂商参数，以及华为 `app/agconnect-services.json`。替换为自己应用的配置。
 - **登录状态**：`LoginSession` 在内存中保存已登录身份与 Token，仅持久化上次选择的 User ID；退出登录清空凭据。演示页临时断开连接保留凭据，供重连使用。
 
 ## 代码导航与扩展
